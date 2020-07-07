@@ -4,6 +4,7 @@ path: /remark-kitchen-sink
 date: 2020-02-21T12:12:25.364Z
 title: 'Hello World: The remark Kitchen Sink'
 thumbnail: /assets/image-6.jpg
+tags: ["Python", "HTML"]
 ---
 # h1 Heading 8-)
 

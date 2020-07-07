@@ -4,6 +4,7 @@ path: /video-post
 date: 2020-02-20T15:05:49.332Z
 title: Post with Youtube Video embed
 thumbnail: /assets/image-1.jpg
+tags: ["Python", "AI"]
 ---
 I have embedded a youtude video in this page. By adding HTML to the markdown
 
