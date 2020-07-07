@@ -20,7 +20,9 @@ const ContactPage = ({
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
         <div>
-          <form name="contact" className="form-container" method="POST" netlify>
+          <form method="post" netlify-honeypot="bot-field" netlify name="contact">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
