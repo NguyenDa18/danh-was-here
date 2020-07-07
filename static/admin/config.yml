@@ -82,4 +82,9 @@ collections:
         # media_library:
         #   config:
         #     multiple: false
+        media_library:
+          name: cloudinary
+          config:
+            cloud_name: dnguyen
+            api_key: 398547178177758
       - { name: body, label: Body, widget: markdown }

@@ -19,9 +19,9 @@ const TagsPage = ({
             <Helmet title={title} />
             <div className="grids">
                 <ul>
-                    {group.map(tag => (
+                    {group.map((tag, i) => (
                         <h3 key={tag.fieldValue}>
-                            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                            <Link key={i} to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                                 {tag.fieldValue} ({tag.totalCount})
                             </Link>
                         </h3>

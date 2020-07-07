@@ -16,11 +16,11 @@ const Tags = ({ pageContext, data }) => {
         <Layout>
             <h1>{tagHeader}</h1>
             <ul>
-                {edges.map(({ node }) => {
+                {edges.map(({ node }, i) => {
                     const { title, path } = node.frontmatter
                     return (
                         <li>
-                            <Link to={path}>{title}</Link>
+                            <Link key={i} to={path}>{title}</Link>
                         </li>
                     )
                 })}
