@@ -2,12 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from '../components/layout'
 
-// Utilities
-import kebabCase from "lodash/kebabCase"
-
 // Components
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import { kebabCase } from '../utils/helpers'
 
 const TagsPage = ({
     data: {

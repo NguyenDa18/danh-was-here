@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { kebabCase } from '../utils/helpers'
 
 const PostLink = ({ post }) => (
   <article className="card ">
@@ -15,6 +16,12 @@ const PostLink = ({ post }) => (
         </Link>
       </h2>
       <div className="post-meta">{post.frontmatter.date}</div>
+      {Object.values(post.frontmatter.tags).map(tag => (
+        <>
+          <Link to={`/tags/${kebabCase(tag)}/`} style={{ paddingRight: '10px' }}>{tag}</Link>
+
+        </>
+      ))}
     </header>
   </article>
 )
