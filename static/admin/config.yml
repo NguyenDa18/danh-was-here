@@ -79,7 +79,7 @@ collections:
         widget: image
         hint: "Image size 1280x800 works best :)"
         required: false
-        media_library:
-          config:
-            multiple: false
+        # media_library:
+        #   config:
+        #     multiple: false
       - { name: body, label: Body, widget: markdown }
