@@ -20,7 +20,7 @@ const ContactPage = ({
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
         <div>
-          <form className="contact" method="POST" netlify>
+          <form name="contact" className="form-container" method="POST" netlify>
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
