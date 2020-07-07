@@ -4,7 +4,16 @@ backend:
   repo: NguyenDa18/danh-was-here
 
 media_folder: static/assets
+
+# Enable Cloudinary images
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dnguyen
+    api_key: 398547178177758
 public_folder: /assets
+site_url: https://danhwashere.com
+logo_url: https://res.cloudinary.com/dnguyen/image/upload/v1594104641/blog/personal/danh-logo-freelogodesign_ur9bgu.png
 publish_mode: editorial_workflow
 
 collections:
