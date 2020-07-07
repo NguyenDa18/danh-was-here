@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /shop-boy-stories-1
-date: 2020-07-06T01:56:00.000Z
+date: 2020-07-05T19:30:00.000Z
 title: 'Shop Boy Stories #1: Origins'
 metaDescription: Shop Boy personal stories from Vietnamese American junior software engineer.
 ---
