@@ -29,16 +29,16 @@ body.light {
   --input-bg: var(--background);
 }
 body.dark {
-  --primary-color: #9984d5;
+  --primary-color: #de023d;
   --primary-text-color: #fff;
   --featured-bg: #66578d;
   --featured-text: #fff;
-  --secondary-color: #66578d;
-  --background: #0A041A;
+  --secondary-color: #b71c1c;
+  --background: #121212;
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
-  --card-bg: #181326;
+  --card-bg: #1F1A24;
   --card-bdr: #181326;
   --card-shadow: #020204;
   --btn-bg: var(--background);
@@ -127,8 +127,13 @@ a {
   font-weight: 400;
   margin: 0 20px 0 0;
   transition: background-color .3s linear;
+  @media screen and (max-width: 600px) {
+    display: block;
+    border: 1px solid black;
+  }
   &.-primary {
     background-color: var(--primary-color);
+    padding: 15px 24px;
     border-color: var(--primary-color);
     color: var(--primary-text-color);
     &:hover {
