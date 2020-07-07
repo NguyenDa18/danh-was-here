@@ -1,10 +1,11 @@
 backend:
-  name: github
+  name: git-gateway
   # change repo to your git repository url
-  repo: W3Layouts/gatsby-starter-delog
+  repo: NguyenDa18/danh-was-here
 
 media_folder: static/assets
 public_folder: /assets
+publish_mode: editorial_workflow
 
 collections:
   - name: settings
@@ -56,7 +57,7 @@ collections:
       - name: path
         label: Path
         widget: string
-        pattern: [/]
+        # pattern: [/]
         hint: "Path must start with /"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
