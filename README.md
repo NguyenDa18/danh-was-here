@@ -1,12 +1,18 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys) &nbsp;
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db9a2ba1-7ae3-4776-81c6-8561451bb7cf/deploy-status)](https://app.netlify.com/sites/danh-was-here-blog/deploys) &nbsp;
 
-# Delog - Blog for Developer and Designer
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+# Danh Was Here
+----
 
-[![Delog - Gatsby Starter Demo](https://w3layouts.com/wp-content/uploads/2020/03/delog.jpg)](https://delog-w3layouts.netlify.com/)
+a blog to put development/learning and personal posts
+
+----
+
+This simple website built with GatsbyJS and Netlify CMS.
+
+![Blog Screenshot](https://res.cloudinary.com/dnguyen/image/upload/v1594194299/code-projects/Git/danhwashere-frontpage_qxezw7.png)
 
 
-Install this starter locally: (assuming you already have [NodeJS and GatsbyJS installed](https://www.gatsbyjs.org/tutorial/part-zero/))
+Based on Delog starter template:
 ```bash
 gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog
 ```
@@ -66,11 +72,6 @@ Change `trackingId` in `gatsby-config.js` at `gatsby-plugin-google-analytics` pl
 I hope you will build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
 
 For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/gatsby-starter-delog/issues/new) Here
-
----
-
-## Roadmap
-We are maintaining future task in [Github Project](https://github.com/W3Layouts/gatsby-starter-delog/projects/1), even though most changes are instantaious. We try keep them posted here.
 
 ---
 
