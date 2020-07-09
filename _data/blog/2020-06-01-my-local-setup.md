@@ -4,6 +4,7 @@ path: /my-local-setup
 date: 2020-06-01T22:21:00.000Z
 title: My Local Setup
 metaDescription: 'Local Mac Setup, Homebrew, Python, Java, Local Install, Environment Setup'
+tags: ["Tech Help", "Quick Notes"]
 ---
 # Local Setup w/ Homebrew
 

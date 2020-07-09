@@ -17,27 +17,27 @@ const ContactPage = ({
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{ backgroundImage: `url('https://res.cloudinary.com/dnguyen/image/upload/v1584663029/blog/personal/desk_background_ekv1jc.jpg')`, marginBottom: 0 }}>
           <h1 className="post-title">Get in Touch</h1>
-          <p>Let me help you kick start your next project &rarr;</p>
+          <p>I'd love to hear from you &rarr;</p>
         </div>
         <div>
           <form className="form-container" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" required />
+            <input type="hidden" name="form-name" value="contact" required />
             <div>
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required />
             </div>
             <div>
               <label htmlFor="sender">Email</label>
-              <input type="email" name="sender" id="sender" />
+              <input type="email" name="sender" id="sender" required />
             </div>
             <div>
               <label htmlFor="subject">Subject</label>
-              <input type="text" name="subject" id="subject" />
+              <input type="text" name="subject" id="subject" required />
             </div>
             <div>
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message"></textarea>
+              <textarea name="message" id="message" required></textarea>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <input type="submit" className="button -primary" style={{ marginRight: 0 }} />
