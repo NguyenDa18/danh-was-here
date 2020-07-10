@@ -38,7 +38,7 @@ body.dark {
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
-  --card-bg: #4b474f;
+  --card-bg: #242226;
   --card-bdr: #181326;
   --card-shadow: #020204;
   --btn-bg: var(--background);
@@ -329,6 +329,10 @@ and (min-width: 768px) {
 body.dark {
   .gg-moon {
     display: none;
+  }
+
+  .dark-image {
+    opacity: 0.4;
   }
 }
 body.light {
