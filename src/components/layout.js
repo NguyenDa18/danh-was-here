@@ -25,7 +25,7 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Danh Was Here &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://github.com/NguyenDa18">Danh</a></p>
+        <p>&copy; {new Date().getFullYear()} Danh Was Here &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://github.com/NguyenDa18">Danh</a> &bull; Based on <a href="https://delog-w3layouts.netlify.app/">Delog Template</a></p>
       </footer>
     </div>
   )

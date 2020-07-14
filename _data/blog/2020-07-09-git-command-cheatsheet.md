@@ -5,6 +5,7 @@ date: 2020-06-18T01:36:55.459Z
 title: Git Command Cheatsheet
 metaDescription: 'Cheatsheet of Git commands to use, source control'
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
+tags: ["Quick Notes"]
 ---
 # My Cheatsheet
 
