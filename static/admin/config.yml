@@ -3,8 +3,13 @@ backend:
   # change repo to your git repository url
   repo: NguyenDa18/danh-was-here
 
-# media_folder: static/assets
-# public_folder: /assets
+media_folder: static/assets
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dnguyen
+    api_key: 398547178177758
+public_folder: /assets
 site_url: https://danhwashere.com
 logo_url: https://res.cloudinary.com/dnguyen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594104641/blog/personal/danh-logo-freelogodesign_ur9bgu.png
 publish_mode: editorial_workflow
@@ -72,12 +77,7 @@ collections:
         widget: image
         hint: "Image size 1280x800 works best :)"
         required: false
-        # media_library:
-        #   config:
-        #     multiple: false
         media_library:
-          name: cloudinary
           config:
-            cloud_name: dnguyen
-            api_key: 398547178177758
+            multiple: true
       - { name: body, label: Body, widget: markdown }
