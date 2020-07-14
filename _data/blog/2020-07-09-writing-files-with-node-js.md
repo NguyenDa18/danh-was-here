@@ -4,6 +4,7 @@ path: /writing-files-with-nodejs
 date: 2020-03-02T00:40:26.671Z
 title: Writing Files with Node.js
 metaDescription: Reference to write JSON files with Node.js
+thumbnail:  https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg
 ---
 # Writing Files 
 
