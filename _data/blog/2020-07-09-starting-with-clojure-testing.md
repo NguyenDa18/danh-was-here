@@ -5,6 +5,7 @@ date: 2020-02-26T23:30:36.729Z
 title: Starting with Clojure Testing
 metaDescription: The quickest way to get started with clj-test for Clojure testing
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1580102789/blog/personal/chalk-categories_skrzdb.jpg
+tags: ["Quick Notes"]
 ---
 * Prereq Leiningen
 
