@@ -5,7 +5,7 @@ date: 2020-06-01T22:21:00.000Z
 title: My Local Setup
 metaDescription: 'Local Mac Setup, Homebrew, Python, Java, Local Install, Environment Setup'
 tags: ["Tech Help", "Quick Notes"]
-thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1584663029/blog/personal/desk_background_ekv1jc.jpg
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1584826410/blog/personal/desk_background_ico88y.jpg
 ---
 # Local Setup w/ Homebrew
 
