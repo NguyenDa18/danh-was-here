@@ -21,6 +21,7 @@
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
+    "netlify-cms": "^2.10.52",
     "netlify-cms-app": "^2.11.13",
     "node-sass": "^4.14.1",
     "prismjs": "^1.19.0",
