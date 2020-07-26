@@ -1,0 +1,65 @@
+---
+template: BlogPost
+path: /quick-redux-vs-reframe
+date: 2020-07-26T22:59:44.293Z
+title: Quick Comparison of Redux vs. Re-Frame
+metaDescription: >-
+  redux, re-frame, clojure, clojurescript, cljs, react-redux, tutorial,
+  comparison, javascript, timer, color
+---
+# Re-Frame example in React+Redux
+
+* prerequisite: React + Redux are Javascript libraries used to build UI and state management. Reagent + Re-Frame are their cousins in Clojurescript town.
+
+---
+
+A coworker admitted to me recently that he thought there was a higher learning curve for React + Redux compared with Reagent + Re-Frame. My first exposure to a state management library was React + Redux during my internship and then with my senior capstone project, and that allowed me to quickly change gears to using Clojure at my workplace. 
+
+In this example I will be making a React + Redux app based off of a Clojurescript example that used Reagent and Re-Frame. This app will allow you to change the color of a HH:MM:SS clock being updated every second like the ClojureScript demo.
+
+Now with Facebook's recent update of Redux with the Redux Toolkit, the similarities between Re-Frame and Redux are clearer to see than ever.
+
+---
+
+[Reagent + Re-Frame demo referenced](https://blog.klipse.tech/clojure/2019/02/17/reframe-tutorial.html)
+
+We'll start by creating a template app based off of the essential create-react-app. This bundles Redux Toolkit and we will be using the shiny up to date new stuff (as of now) for this tutorial:
+`npx create-react-app timer-demo --template redux`
+
+When you run `npm start` you will see the demo application used in the template: a simple counter and looking through it is all you need to start writing your own piece based off the example app.
+
+## Concepts
+- A selector behaves the same was as a sub in Re-Frame
+- A dispatch emits actions that are the same as events in Re-Frame
+- The store is the same as a db in Re-Frame
+- The configureStore function is the same as the initialize-db event in Re-Frame. The extra touch is the parameters are all the reducers we use.
+
+1. Create a feature for color state (we are following the way the template created a feature for the counter)
+- add a new feature by creating a new folder and naming it `color`
+- add 3 files to it
+   - Clock.js
+   - ColorInput.js
+   - colorSlice.js
+
+2. Add the beefy part of our Redux stuff in colorSlice.js
+
+- Create our slice: this includes the name, initialState, and our reducers
+```js
+export const colorSlice = createSlice({
+    name: 'color',
+    initialState: {
+        time: new Date().toTimeString().split(' ')[0],
+        timeColor: "#f88"
+    },
+    reducers: {
+        timeColorChange: (state, action) => {
+            state.timeColor = action.payload
+        },
+        timeChange: (state, action) => {
+            state.time = action.payload
+        }
+    }
+})
+```
+
+TBC....
