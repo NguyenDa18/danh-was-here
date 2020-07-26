@@ -13,9 +13,9 @@ metaDescription: >-
 
 ---
 
-A coworker admitted to me recently that he thought there was a higher learning curve for React + Redux compared with Reagent + Re-Frame. My first exposure to a state management library was React + Redux during my internship and then with my senior capstone project, and that allowed me to quickly change gears to using Clojure at my workplace. 
+A coworker admitted to me recently that he thought there was a higher learning curve for React + Redux compared with Reagent + Re-Frame. My first exposure to a state management library was React + Redux during my internship and then with my senior capstone project, and that allowed me to quickly change gears to using Clojure at my workplace. I have to admit, I was a little sour about not being able to use JavaScript to contribute to the team's Clojure codebase, and was prepping myself for the Clojure learning grind. But when I got to the parts of the codebase using Re-Frame I saw a familiar face: it was good 'ol Redux in a different outfit, maybe something with chainmail because of the parentheses used.
 
-In this example I will be making a React + Redux app based off of a Clojurescript example that used Reagent and Re-Frame. This app will allow you to change the color of a HH:MM:SS clock being updated every second like the ClojureScript demo.
+In this example I will be making a React + Redux app based off of a Clojurescript example that used Reagent and Re-Frame. It was the first example I learned from when practicing Clojurescript. This app will allow you to change the color of a HH:MM:SS clock being updated every second like the ClojureScript demo.
 
 Now with Facebook's recent update of Redux with the Redux Toolkit, the similarities between Re-Frame and Redux are clearer to see than ever.
 
