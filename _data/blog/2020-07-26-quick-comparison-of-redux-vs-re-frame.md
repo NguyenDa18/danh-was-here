@@ -6,6 +6,8 @@ title: Quick Comparison of Redux vs. Re-Frame
 metaDescription: >-
   redux, re-frame, clojure, clojurescript, cljs, react-redux, tutorial,
   comparison, javascript, timer, color
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1595807209/blog/redux-reframe_vln1sh.jpg
+tags: ["Tech Help"]
 ---
 # Re-Frame example in React+Redux
 
