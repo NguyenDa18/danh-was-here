@@ -3,6 +3,7 @@ template: BlogPost
 path: /on-being-asian-american
 date: 2020-07-26T00:11:19.118Z
 title: My Reflection on Being Vietnamese American
+metaDescription: 'american reflection, vietnamese american, viet thanh nguyen'
 ---
 Apologies for the lack of posts lately -needless to say I've been busy or was resting.
 
