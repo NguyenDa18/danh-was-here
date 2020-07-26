@@ -9,6 +9,16 @@ Apologies for the lack of posts lately -needless to say I've been busy or was re
 
 During the time I am writing this, America is portrayed in chaos, rightfully so. What really hits hard are the Portland protests at the Justice Center, and the chilling response of the federal government taking protesters in unmarked vans, and causing serious and needless injuries. All of this after practically 5 months of COVID-19 clouding the country in confusion, suspicion, and trepidation.
 
+This is not the America I know -or is it? Frankly, I believe I have barely experienced it since I grew up in a small Vietnamese community. However, my best friend who was a Saudi international student is curious about my experience of living here -was America always as gilded as this, with something alarming bubbling under the surface and if given a light touch would shatter the illusion of first-world status? Here are my thoughts. Since I have a limited amount of anecdotes of my experience of America, it actually gives me an advantage by thinking generally and considering things many take for granted.
+
+The first thing that came to mind of my experience of America is the love of accomodation. Of course, racism is still a daily fact to recognize, but there are nuances that I didn't appreciate until going on a trip to Vietnam last year. The streets of Ho Chi Minh City, Vietnam were a free-for-all, with pedestrians having to play Frogger by calculating the right time to cross in front of a line of traffic. Traffic lights in America ensured an organized way of flow but also accomodated people in wheelchairs and the blind to be able to cross the street, a feat that seems impossible if living with the disability in Vietnam. 
+
+...more accomodation stuff
+
+I am grateful that America is able to have high-level comedy because of the citizens' right of free speech. Comedic political commentaries from Last Week Tonight and others would not be possible in other countries that bar criticism of country leaders.
+
+---
+
 I have kept a faded copy of TIME magazine on my shelf for 2 years now and that is because of one entry that really soothed my heart whenever I needed a dose of hope again: "American Like Me" by Viet Thanh Nguyen. 
 
 The following are parts I highlighted that I keep to my heart today, as an American child with immigrant parents.
