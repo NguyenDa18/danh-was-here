@@ -8,6 +8,7 @@ metaDescription: >-
   comparison, javascript, timer, color
 thumbnail: >-
   https://res.cloudinary.com/dnguyen/image/upload/v1595807209/blog/redux-reframe_vln1sh.jpg
+tags: ["Tech Help", "Tutorials"]
 ---
 # Re-Frame example in React+Redux
 * Core image from [DeviantArt](https://www.deviantart.com/ameij/art/Arm-wrestling-167001658)
