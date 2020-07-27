@@ -71,16 +71,15 @@ export const colorSlice = createSlice({
 })
 ```
 
-- Pull out our actions created from the slice: the combination of our reducer and action is the same as an event in Re-Frame
+- Pull out our actions created from the slice: the combination of our reducer and action is the same as an event in Re-Frame.
 ```js
 export const { timeColorChange, timeChange } = colorSlice.actions
 ```
 
-- Add out selectors and export our slice
+- Add out selectors (which are the same as subs) and export our slice
 ```js
 export const selectTimeColor = state => state.color.timeColor
 export const selectTime = state => state.color.time
-
 export default colorSlice.reducer
 ```
 
@@ -91,11 +90,9 @@ export default colorSlice.reducer
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { timeColorChange, selectTimeColor } from './colorSlice'
-
 const ColorInput = () => {
     const color = useSelector(selectTimeColor)
     const dispatch = useDispatch()
-
     return (
         <div>
             <input type="text"
@@ -104,17 +101,16 @@ const ColorInput = () => {
         </div>
     )
 }
-
 export default ColorInput
 ```
 
 4. Add our Clock UI
 - Notice that we use the useEffect hook to cause a change in state (or in this case dispatching a time change in our redux state) when the component mounts. It automatically updates our component by causing a re-render each second.
+
 ```js
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectTimeColor, selectTime, timeChange } from './colorSlice'
-
 const Clock = () => {
     const color = useSelector(selectTimeColor)
     const time = useSelector(selectTime)
@@ -124,13 +120,11 @@ const Clock = () => {
             dispatch(timeChange(new Date().toTimeString().split(' ')[0]))
         }, 1000)
     }, [dispatch])
-
     return (
         <div style={{ color: `${color}` }}>
             <h1>{time.toString()}</h1>
         </div>
     )
 }
-
 export default Clock
 ```
