@@ -38,9 +38,9 @@ When you run `npm start` you will see the demo application used in the template:
 # Let's get started.
 
 ### Here are some things to take note if you have experience with Re-Frame:
-- A selector behaves the same was as a sub in Re-Frame
-- A dispatch emits actions that are the same as events in Re-Frame
-- The store is the same as a db in Re-Frame
+- A selector behaves the same way as a sub in Re-Frame.
+- A dispatch emits actions that are the same as events in Re-Frame.
+- The store is the same as a db in Re-Frame.
 - The configureStore function is the same as the initialize-db event in Re-Frame. The extra touch is the parameters are all the reducers we use.
 
 ## Creating our Feature + Slice
@@ -148,7 +148,7 @@ export default Clock
 
 ## Hook everything up
 5. Add your components to the main App.js
-6. Add your color slice to the configureStore function in `store.js` so it is registered
+6. Add your color slice to the configureStore function in `store.js` so it is registered. The store is like the db of Re-Frame, containing the "global" application state that can be referenced by any component subscribed. In `index.js` you see that a `Provider` component is the wrapper around the app and its components, providing that state.
 ```js
 export default configureStore({
     reducer: {
