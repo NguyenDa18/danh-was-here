@@ -2,13 +2,14 @@
 template: BlogPost
 path: /my-local-setup
 date: 2020-06-01T22:21:00.000Z
-title: My Local Setup
+title: My Local Setup w/ Homebrew
 metaDescription: 'Local Mac Setup, Homebrew, Python, Java, Local Install, Environment Setup'
 tags: ["Tech Help", "Quick Notes"]
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1584826410/blog/personal/desk_background_ico88y.jpg
 ---
-# Local Setup w/ Homebrew
+# Local Setup for my Mac
 
+Homebrew is a gift for installing stuff on a Mac:
 [Brew Documentation](https://brew.sh/)
 
 Setting up for local dev is sometimes a PIA, but Homebrew makes it SOOO much easier! My go-to answer for whenever someone asks why Mac? As I move to computer to computer, I will cherish my favorite moving buddies: Git (my go-to version control), Homebrew, and NPM. Homebrew? More like Homeboy...
@@ -28,13 +29,13 @@ Setting up for local dev is sometimes a PIA, but Homebrew makes it SOOO much eas
 
 ### Adjust path to use Python 3 instead of Python 2
 - View where python is installed
-`ls -l /usr/local/bin/python*`
+    - `ls -l /usr/local/bin/python*`
 
 - change default python symlink to the version you want to use
-`ln -s -f /usr/local/bin/<python3 version> /usr/local/bin/python`
+    - `ln -s -f /usr/local/bin/<python3 version> /usr/local/bin/python`
 
 - close terminal and check that you now are using Python3 as the default:
-`python -V` : should return Python <python3 version>
+    - `python -V` : should return Python <python3 version>
 
 - [Source](https://dev.to/malwarebo/how-to-set-python3-as-a-default-python-version-on-mac-4jjf)
 
