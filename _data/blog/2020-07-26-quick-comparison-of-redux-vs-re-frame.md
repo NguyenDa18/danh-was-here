@@ -2,7 +2,7 @@
 template: BlogPost
 path: /quick-redux-vs-reframe
 date: 2020-07-26T22:59:44.293Z
-title: Quick Comparison of Redux vs. Re-Frame
+title: Quick Example of Reagent + Re-Frame to React + Redux
 metaDescription: >-
   redux, re-frame, clojure, clojurescript, cljs, react-redux, tutorial,
   comparison, javascript, timer, color
