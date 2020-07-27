@@ -118,9 +118,8 @@ export default ColorInput
     .toTimeString
     (str/split " ")
     first)
-
 ;; JS version
-new Date().toTimeString().split(' ')[0]
+;; new Date().toTimeString().split(' ')[0]
 ```
 
 Add the following to Clock.jsx:
