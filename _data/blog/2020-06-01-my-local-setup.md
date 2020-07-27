@@ -22,21 +22,30 @@ Setting up for local dev is sometimes a PIA, but Homebrew makes it SOOO much eas
 ## Brew Installs
 
 ### Python related
-
 * `brew install nginx`
 * `brew install python`
 * `brew install anaconda`
 
 ### Adjust path to use Python 3 instead of Python 2
+- View where python is installed
+`ls -l /usr/local/bin/python*`
 
-* [Link](https://medium.com/ayuth/install-anaconda-on-macos-with-homebrew-c94437d63a37)
+- change default python symlink to the version you want to use
+`ln -s -f /usr/local/bin/<python3 version> /usr/local/bin/python`
+
+- close terminal and check that you now are using Python3 as the default:
+`python -V` : should return Python <python3 version>
+
+- [Source](https://dev.to/malwarebo/how-to-set-python3-as-a-default-python-version-on-mac-4jjf)
+
+### Anaconda Setup
 * Edit `~/.zshrc`
 * Add `export PATH="/usr/local/anaconda3/bin:$PATH"`
 * Restart terminal or use `source ~/.zshrc` to reload your shell environment
 * Then you will be able to run `jupyter notebook` or `python` and you will be using the Anaconda distribution
+* [Source](https://medium.com/ayuth/install-anaconda-on-macos-with-homebrew-c94437d63a37)
 
 ### Java Stuff : handle JDK + JRE
-
 * `brew tap adoptopenjdk/openjdk`
 * `brew cask install adoptopenjdk8`
 * `brew install jenv` : [Manager for diff Java versions](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
@@ -50,7 +59,6 @@ Setting up for local dev is sometimes a PIA, but Homebrew makes it SOOO much eas
 - [Easy install of Java and Gradle versions](https://sdkman.io/)
 
 ### Then you can install Leiningen, b/c Clojure has dependency on Java
-
 * `brew install leiningen`
 
 ### Install Docker
@@ -59,5 +67,5 @@ Setting up for local dev is sometimes a PIA, but Homebrew makes it SOOO much eas
 * Start Docker app and follow the same routine as if you installed the Mac .dmg from Docker: [Reference](https://stackoverflow.com/questions/44084846/cannot-connect-to-the-docker-daemon-on-macos)
 
 ### Node Installation
-
+- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 * Use curl command from [NVM link](https://github.com/nvm-sh/nvm)
