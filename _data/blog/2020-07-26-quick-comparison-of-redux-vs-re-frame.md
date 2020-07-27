@@ -151,9 +151,9 @@ export default Clock
 6. Add your color slice to the configureStore function in `store.js` so it is registered
 ```js
 export default configureStore({
-  reducer: {
-    counter: counterReducer,
-    color: colorReducer
+    reducer: {
+        counter: counterReducer,
+        color: colorReducer
   },
 });
 ```
