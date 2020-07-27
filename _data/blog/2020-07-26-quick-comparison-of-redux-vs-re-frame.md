@@ -33,26 +33,26 @@ We'll start by creating a template app based off of the essential create-react-a
 
 When you run `npm start` you will see the demo application used in the template: a simple counter and looking through it is all you need to start writing your own piece based off the example app.
 
-![Starter App](https://res.cloudinary.com/dnguyen/image/upload/v1595808346/blog/reframe-redux/redux-counter_ohs24j.png)
+![Starter App](https://res.cloudinary.com/dnguyen/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1595808346/blog/reframe-redux/redux-counter_ohs24j.png)
 
 # Let's get started.
 
-### For your consideration:
+### Here are some things to take note if you have experience with Re-Frame:
 - A selector behaves the same was as a sub in Re-Frame
 - A dispatch emits actions that are the same as events in Re-Frame
 - The store is the same as a db in Re-Frame
 - The configureStore function is the same as the initialize-db event in Re-Frame. The extra touch is the parameters are all the reducers we use.
 
 ## Creating our Feature + Slice
-1. Create a feature for color state (we are following the way the template created a feature for the counter)
+1. Create a feature for color state (we are following the way the template created a feature for the counter). This will contain all the state we are using for this example: the color of our clock and the time shown on the clock.
 - add a new feature by creating a new folder and naming it `color`
 - add 3 files to it
-    - Clock.js
-    - ColorInput.js
+    - Clock.jsx
+    - ColorInput.jsx
     - colorSlice.js
 
-2. Add the beefy part of our Redux stuff in colorSlice.js
-- Create our slice: this includes the name, initialState, and our reducers
+2. Add our Redux stuff in colorSlice.js
+- Create our slice: this includes the label of our slice, initialState, and our reducers
 ```js
 export const colorSlice = createSlice({
     name: 'color',
@@ -87,6 +87,9 @@ export default colorSlice.reducer
 3. Add our Color Picker UI
 - We use Redux hook functions from the Redux Toolkit. Note, before RTK we would have to connect our component and pass in mapStateToProps. Using hooks is much cleaner, a very welcome change in RTK!
 - This component will be the input box that allows us to change the color of our time
+
+Add the following to ColorInput.jsx:
+
 ```js
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
@@ -108,6 +111,19 @@ export default ColorInput
 4. Add our Clock UI
 - Notice that we use the useEffect hook to cause a change in state (or in this case dispatching a time change in our redux state) when the component mounts. It automatically updates our component by causing a re-render each second.
 - For the visible UI we are returning we only need a selector since we are just reading the value of the color from Redux state.
+- Notice how the JS interopt used in ClojureScript matches how we are setting the time in our JS app:
+```clojure
+; Clojure version
+(-> (js/Date,)
+    .toTimeString
+    (str/split " ")
+    first)
+
+;; JS version
+new Date().toTimeString().split(' ')[0]
+```
+
+Add the following to Clock.jsx:
 
 ```js
 import React, { useEffect } from 'react'
