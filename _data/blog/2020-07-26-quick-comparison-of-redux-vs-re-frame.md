@@ -84,8 +84,9 @@ export const selectTime = state => state.color.time
 export default colorSlice.reducer
 ```
 
-3. Add our Color Picker UI using the Redux state.
-- we use Redux hook functions from the Redux Toolkit. Before RTK we would have to connect our component and pass in mapStateToProps.
+## Creating our UI elements using the Redux state
+3. Add our Color Picker UI
+- We use Redux hook functions from the Redux Toolkit. Note, before RTK we would have to connect our component and pass in mapStateToProps. Using hooks is much cleaner, a very welcome change in RTK!
 - This component will be the input box that allows us to change the color of our time
 ```js
 import React from 'react'
@@ -107,6 +108,7 @@ export default ColorInput
 
 4. Add our Clock UI
 - Notice that we use the useEffect hook to cause a change in state (or in this case dispatching a time change in our redux state) when the component mounts. It automatically updates our component by causing a re-render each second.
+- For the visible UI we are returning we only need a selector since we are just reading the value of the color from Redux state.
 
 ```js
 import React, { useEffect } from 'react'
@@ -129,3 +131,22 @@ const Clock = () => {
 }
 export default Clock
 ```
+
+## Hook everything up
+5. Add your components to the main App.js
+6. Add your color slice to the configureStore function in `store.js` so it is registered
+```js
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+    color: colorReducer
+  },
+});
+```
+
+7. Test it!
+You should be able to update the color and the clock will match accordingly and the time updates every second too.
+
+## Treat yourself!
+**Congratulations!** You have successfully completed a port of a Reagent + Re-Frame app to React + Redux!
+![Alt Text](https://media.giphy.com/media/7zMkk1aiQVonuZQKi6/giphy.gif)
