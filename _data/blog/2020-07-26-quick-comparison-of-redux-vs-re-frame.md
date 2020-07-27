@@ -161,6 +161,16 @@ export default configureStore({
 7. Test it!
 You should be able to update the color and the clock will match accordingly and the time updates every second too.
 
+Here is the finished product:
+
+<iframe
+     src="https://codesandbox.io/embed/redux-tk-clock-4xgle?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
+     title="redux-tk-clock"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
 ## Treat yourself!
 ![Celebrate](https://media.giphy.com/media/7zMkk1aiQVonuZQKi6/giphy.gif)
 
