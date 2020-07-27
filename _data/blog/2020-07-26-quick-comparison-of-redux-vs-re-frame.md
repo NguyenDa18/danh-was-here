@@ -13,14 +13,14 @@ tags: ["Tech Help", "Tutorials"]
 # Re-Frame example in React+Redux
 * Core image from [DeviantArt](https://www.deviantart.com/ameij/art/Arm-wrestling-167001658)
 * Blog image made with [Pixlr](https://pixlr.com/x/)
-* prerequisite: React + Redux are JavaScript libraries used to build UI and state management for SPA apps. Reagent + Re-Frame are their cousins in Clojurescript town.
+* prerequisite: React + Redux are JavaScript libraries used to build UI and state management for SPA apps. Reagent + Re-Frame are their cousins in ClojureScript town.
 
 ---
-> "Is the learning curve for Redux steeper than Re-Frame?"
+> **"Is the learning curve for Redux steeper than Re-Frame?"**
 
 A coworker admitted to me recently that he thought there is a higher learning curve for React + Redux compared with Reagent + Re-Frame. My first exposure to a state management library was React + Redux during my internship and then with my senior capstone project, and that allowed me to quickly change gears to using Clojure at my workplace. I have to admit, I was a little sour about not being able to use JavaScript to contribute to the team's Clojure codebase at first, and was prepping myself for the Clojure learning grind. But when I got to the parts of the codebase using Re-Frame I saw a familiar face: it was good 'ol Redux in a different outfit, maybe something with chainmail because of the parentheses used.
 
-In this example I will be making a React + Redux app based off of a Clojurescript example that used Reagent and Re-Frame. It was the first example I learned from when practicing Clojurescript. This app will allow you to change the color of a HH:MM:SS clock being updated every second like the ClojureScript demo.
+In this example I will be making a React + Redux app based off of a ClojureScript example that used Reagent and Re-Frame. It was the first example I learned from when practicing ClojureScript. This app will allow you to change the color of a HH:MM:SS clock being updated every second like the ClojureScript demo.
 
 Now with Facebook's recent update of Redux with the Redux Toolkit, the similarities between Re-Frame and Redux are clearer to see than ever.
 
@@ -47,12 +47,11 @@ When you run `npm start` you will see the demo application used in the template:
 1. Create a feature for color state (we are following the way the template created a feature for the counter)
 - add a new feature by creating a new folder and naming it `color`
 - add 3 files to it
-   - Clock.js
-   - ColorInput.js
-   - colorSlice.js
+    - Clock.js
+    - ColorInput.js
+    - colorSlice.js
 
 2. Add the beefy part of our Redux stuff in colorSlice.js
-
 - Create our slice: this includes the name, initialState, and our reducers
 ```js
 export const colorSlice = createSlice({
@@ -77,7 +76,7 @@ export const colorSlice = createSlice({
 export const { timeColorChange, timeChange } = colorSlice.actions
 ```
 
-- Add out selectors (which are the same as subs) and export our slice
+- Add our selectors (which are the same as subs) and export our slice
 ```js
 export const selectTimeColor = state => state.color.timeColor
 export const selectTime = state => state.color.time
@@ -148,5 +147,6 @@ export default configureStore({
 You should be able to update the color and the clock will match accordingly and the time updates every second too.
 
 ## Treat yourself!
+![Celebrate](https://media.giphy.com/media/7zMkk1aiQVonuZQKi6/giphy.gif)
+
 **Congratulations!** You have successfully completed a port of a Reagent + Re-Frame app to React + Redux!
-![Alt Text](https://media.giphy.com/media/7zMkk1aiQVonuZQKi6/giphy.gif)
