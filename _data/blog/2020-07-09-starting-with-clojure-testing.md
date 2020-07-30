@@ -32,11 +32,12 @@ expected: (= 0 1)
 `(ns <app-name>.<folder name>.<filename>)`
 e.g. `(ns clj-testing.utils.numbers)` : created a utils folder in src and a file numbers.clj
 6. Import that namespace and add an appropriate unit test:
+
 ```clojure
 (ns clj-testing.utils.numbers-test
 (:require [clojure.test :refer :all]
           [clj-testing.util.numbers :as num]))
-
+          
 (deftest test-parseInt
   (testing "Parses string to int"
     (is (= -24 (num/parse-int "-24")))))
