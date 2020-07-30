@@ -36,8 +36,7 @@ e.g. `(ns clj-testing.utils.numbers)` : created a utils folder in src and a file
 ```clojure
 (ns clj-testing.utils.numbers-test
 (:require [clojure.test :refer :all]
-          [clj-testing.util.numbers :as num]))
-          
+          [clj-testing.util.numbers :as num])) 
 (deftest test-parseInt
   (testing "Parses string to int"
     (is (= -24 (num/parse-int "-24")))))
