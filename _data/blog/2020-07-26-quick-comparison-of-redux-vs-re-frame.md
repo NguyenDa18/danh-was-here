@@ -6,8 +6,7 @@ title: Quick Example of Reagent + Re-Frame to React + Redux
 metaDescription: >-
   redux, re-frame, clojure, clojurescript, cljs, react-redux, tutorial,
   comparison, javascript, timer, color
-thumbnail: >-
-  https://res.cloudinary.com/dnguyen/image/upload/v1595807209/blog/redux-reframe_vln1sh.jpg
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1595807209/blog/reframe-redux/redux-reframe_vln1sh.jpg
 tags: ["Tech Help", "Tutorials"]
 ---
 # Re-Frame example in React+Redux
