@@ -4,7 +4,7 @@ path: /get-cookies-js
 date: 2020-08-05T16:51:42.862Z
 title: How I Get Application Cookies using JS
 metaDescription: 'JavaScript, Get Cookies JS, Cookies Util Function, JavaScript Util Cookies'
-tags: ["Quick Notes"]
+tags: ["Quick Notes", "JavaScript"]
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1596646591/blog/cookies_rucwwh.jpg
 ---
 # How I Get Application Cookies Using Pure JS

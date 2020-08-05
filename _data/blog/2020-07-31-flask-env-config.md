@@ -4,7 +4,7 @@ path: /flask-env-config
 date: 2020-07-31T21:15:04.607Z
 title: My Flask Setup for Multiple Environments
 metaDescription: 'Flask server, Python server, Flask configuration multiple different environments'
-tags: ["Tech Help", "Tutorials"]
+tags: ["Tech Help", "Tutorials", "Python"]
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1587692311/blog/snake_fp6nd1.jpg
 ---
 # My Flask Setup for Multiple Environments
