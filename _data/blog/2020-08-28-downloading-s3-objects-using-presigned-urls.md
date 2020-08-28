@@ -14,7 +14,7 @@ For my current work project I am generating an Excel workbook and saving it to a
 …And then I discovered:
 [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html)
 
-![Whoa](https://giphy.com/gifs/woah-PoBDmG9EUpPhu)
+![Whoa](https://media.giphy.com/media/PoBDmG9EUpPhu/giphy.gif)
 
 With these babies you can generate a somewhat secure temporary link that exposes your S3 file as a downloadable link for the amount of time you set that link’s lifetime to.
 

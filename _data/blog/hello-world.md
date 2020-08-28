@@ -8,4 +8,5 @@ metaDescription: Meta description for Hello World
 tags: ["Personal"]
 ---
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugiat delectus pariatur blanditiis nulla soluta ratione nostrum, harum maiores adipisci a quod nobis cupiditate quae odit unde qui sit consequuntur.
+Thanks for visiting my blog. I hope you can take something away from it and if you like it please share it with others.
+> D.N.
