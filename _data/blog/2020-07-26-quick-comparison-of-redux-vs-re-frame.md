@@ -113,7 +113,7 @@ export default ColorInput
 - Notice how the JS interopt used in ClojureScript matches how we are setting the time in our JS app:
 ```clojure
 ; Clojure version
-(-> (js/Date,)
+(-> (js/Date.)
     .toTimeString
     (str/split " ")
     first)
