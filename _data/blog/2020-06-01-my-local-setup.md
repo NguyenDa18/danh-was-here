@@ -6,6 +6,7 @@ title: My Local Setup w/ Homebrew
 metaDescription: 'Local Mac Setup, Homebrew, Python, Java, Local Install, Environment Setup'
 thumbnail: >-
   https://res.cloudinary.com/dnguyen/image/upload/v1584826410/blog/personal/desk_background_ico88y.jpg
+tags: ['Tech Help', 'Quick Notes']
 ---
 # Local Setup for my Mac
 
