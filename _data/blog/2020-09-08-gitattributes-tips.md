@@ -1,8 +1,8 @@
 ---
 template: BlogPost
 path: /gitattributes-tips
-date: 2020-08-05T16:51:42.862Z
-title: How I Get Application Cookies using JS
+date: 2020-09-08T16:51:42.862Z
+title: Solve Script Issues with GitAttributes
 metaDescription: 'script command not found, CLRF, LR, line endings for windows and linux'
 tags: ["Quick Notes"]
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg
@@ -18,7 +18,8 @@ internal-service    | /bin/sh: ./start.sh: not found
 ```
 
 I had used a team GraphQL service template to generate my service and what was strange was that the current services not using the template were running fine with Docker Compose but *every single* one I generated failed (I knew I had to contact the developer of the template after seeing that the problem was not just in my service but in the docker config of the template itself). First we were stumped -the docker-compose.yml, Dockerfile, and aws.yml files were identical between working services and the ones failing based off of the template. But after some digging with the other developer, the other developer suggested line endings being the problem:
-```
+
+```sh
 bash-4.4$ ./start.sh
 bash: ./start.sh: /bin/bash^M: bad interpreter: No such file or directory
 bash-4.4$
@@ -38,7 +39,7 @@ At this point, it was a simple fix using a .gitattributes file, which I will be 
 
 - `touch .gitattributes`
 - Add to the file:
-```
+```sh
 * text=auto
 *.sh text eol=lf
 ```
