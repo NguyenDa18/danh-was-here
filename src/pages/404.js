@@ -9,7 +9,7 @@ const notFound = () => {
       <Helmet>
         <title>Page not found</title>
       </Helmet>
-      <div style={{textAlign: "center", padding:"5vh 0", lineHeight: "1.5"}}>
+      <div style={{ textAlign: "center", padding: "5vh 0", lineHeight: "1.5" }}>
         <svg
           width="256"
           height="256"
@@ -37,7 +37,7 @@ const notFound = () => {
             fill="currentColor"
           />
         </svg>
-        <p>Either you are in a wrong page or you have lost. Lets go back <Link to="/">home</Link> safely</p>
+        <p>Either you are in a wrong page or you have lost. Let's go back <Link to="/">home</Link> safely</p>
       </div>
     </Layout>
   )
