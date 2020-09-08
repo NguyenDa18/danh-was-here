@@ -31,6 +31,7 @@ I was sure this was a common problem and sure enough I found articles that helpe
 - [First article](https://techblog.dorogin.com/case-of-windows-line-ending-in-bash-script-7236f056abe)
 - [Article on how to change all the line endings of a repo with .gitattributes](https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings#refreshing-a-repository-after-changing-line-endings)
 - [Another article confirming problem was due to line endings](https://stackoverflow.com/questions/37419042/container-command-start-sh-not-found-or-does-not-exist-entrypoint-to-contain)
+- [Great summary of gitattributes](https://dev.to/deadlybyte/please-add-gitattributes-to-your-git-repository-1jld)
 
 ## Details
 So the problem was that Windows CLRF line endings were causing our script to fail.
@@ -39,10 +40,10 @@ At this point, it was a simple fix using a .gitattributes file, which I will be 
 
 - `touch .gitattributes`
 - Add to the file:
-```sh
-* text=auto
-*.sh text eol=lf
-```
+    ```sh
+    * text=auto
+    *.sh text eol=lf
+    ```
 
 - `git add --renormalize .` : Change all line endings
 - `git push` : Problem solved!
