@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /git-command-cheatsheet
-date: 2020-06-18T01:36:55.459Z
+date: 2020-09-10T01:36:55.459Z
 title: Git Command Cheatsheet
 metaDescription: 'Cheatsheet of Git commands to use, source control'
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
@@ -48,11 +48,17 @@ tags: ["Quick Notes"]
 #### HARD METHOD
 - `git reset --hard <commit hash>` : reverts tracked files to state they were in before but it leaves untracked files alone
 
-### Git Clean
-- `git clean -df` : Removes untracked files and folders, keeps working directory clean
+### Git Lost and Found Commits
+- `git fsck --lost-found`
+- Results in dangling commits (your lost work even before a botched git reset are cached! Unless Git did a garbage collection)
+- Then run `git reflog` to find commit id and apply it back onto current branch with `git merge`
+- [Source](http://gitready.com/advanced/2009/01/17/restoring-lost-commits.html)
 
 ### Git Reflog
 - `git reflog` : walkthrough of operations to git history
+
+### Git Clean
+- `git clean -df` : Removes untracked files and folders, keeps working directory clean
 
 ### Git tracking errors --need to rebase
 - `git pull`
