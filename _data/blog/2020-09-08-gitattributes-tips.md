@@ -17,7 +17,11 @@ The error:
 internal-service    | /bin/sh: ./start.sh: not found
 ```
 
-I had used a team GraphQL service template to generate my service and what was strange was that the current services not using the template were running fine with Docker Compose but *every single* one I generated failed (I knew I had to contact the developer of the template after seeing that the problem was not just in my service but in the docker config of the template itself). First we were stumped -the docker-compose.yml, Dockerfile, and aws.yml files were identical between working services and the ones failing based off of the template. But after some digging with the other developer, the other developer suggested line endings being the problem:
+I had used a team GraphQL service template to generate my service and what was strange was that the current services not using the template were running fine with Docker Compose but *every single* one I generated failed! 
+
+![Nooo](https://media.giphy.com/media/x01T61LAppHfG/source.gif)
+
+After seeing that the problem was not just in my service but in the docker config of the template itself, I knew I had to contact the developer of the template. First we were stumped -the docker-compose.yml, Dockerfile, and aws.yml files were identical between working services and the ones failing based off of the template. But after some digging with the other developer, he suggested line endings being the problem:
 
 ```sh
 bash-4.4$ ./start.sh
@@ -25,7 +29,7 @@ bash: ./start.sh: /bin/bash^M: bad interpreter: No such file or directory
 bash-4.4$
 ```
 
-In which the start.sh script was in the correct path, but still not being found possibly due to line endings being different between Windows and Macs/Linux machines.
+In which the setup script he wrote contained Windows line CLRF endings, and when run in a Linux environment the lines caused a syntax error.
 
 I was sure this was a common problem and sure enough I found articles that helped me discover .gitattributes files:
 - [First article](https://techblog.dorogin.com/case-of-windows-line-ending-in-bash-script-7236f056abe)
