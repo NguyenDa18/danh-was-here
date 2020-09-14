@@ -17,4 +17,11 @@ I love working with DataFrames -very readable data tables that we are blessed wi
 | `df.rename(<dict of cols to replace>)` | Rename column names of DataFrame |
 | `df.values.tolist()` | DataFrame to list of lists |
 | `df1.join(df2, how=<'inner' if intersection>)` | Join two DataFrames |
+| `df['col'].diff()` | Computer percent changes of time series col |
+| `df.corr(method='pearson')` | Review all pairwise correlations of df cols |
+| `df[col1].corr(df[col2])` | Pandas correlation method of Series |
+| `df.skew()` | Review Gaussian distribution |
+| `df.hist()` | View histograms for faster observations |
+| `df[<col name>].value_counts()` | Get unique value counts for column |
+| `df.drop(columns=<list of cols>, inplace=True/False)` | Delete unnecessary columns |
 
