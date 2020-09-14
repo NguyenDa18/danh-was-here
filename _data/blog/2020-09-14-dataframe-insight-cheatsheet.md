@@ -24,4 +24,14 @@ I love working with DataFrames -very readable data tables that we are blessed wi
 | `df.hist()` | View histograms for faster observations |
 | `df[<col name>].value_counts()` | Get unique value counts for column |
 | `df.drop(columns=<list of cols>, inplace=True/False)` | Delete unnecessary columns |
+| `df[<col name>].value_counts(normalize=True)` | Express value counts as proportions of the total |
+| `df[df['<col name>'].str.contains('<substring>')]` | Get all rows that contain specific word |
+| `df.groupby(['<col1>', '<col2>']).mean()` | Get means by column |
+| `sub_df = df[df['col_name'] == '<some value>']` | Create subset DataFrame based on some value |
+| `df.sort_values(by='<col_name>', ascending=False)` | Sort by descending |
+| `df['change_to_bool'] = df.change_to_bool.astype(bool)` | Change data type to bool |
+| `df.isnull().sum()` | Count number of missing values in each column |
+| `df.dropna(subset=['specific_col'], inplace=True)` | Drop all rows that are missing specific attribute |
+| `df.set_index('col_name', inplace=True)` | Set column as index |
+| `df.sample(frac=1.0, replace=True, random_state=42)` | Sample with replacement from a DataFrame |
 
