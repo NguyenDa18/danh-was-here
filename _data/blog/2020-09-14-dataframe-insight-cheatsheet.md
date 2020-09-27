@@ -4,8 +4,11 @@ path: /dataframe-cheatsheet
 date: 2020-09-26T05:27:23.228Z
 title: DataFrame Insight Cheatsheet
 metaDescription: 'python dataframe, dataframe cheatsheet, pandas dataframe'
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1601196152/blog/shelf-df_chiphc.jpg
 ---
 # My DataFrame Cheatsheet
+* Core image from [Phantasio Games](http://www.phantasiogames.net/2019/11/shelves-are-small.html)
+
 I love working with DataFrames -very readable data tables that we are blessed with Pandas to help us break down complex and annoying data from a variety of formats. That said, filtering and summing down is a vital step for any data analysis (and so you will actually have time to watch Netflix) so here is some quick things to consider:
 
 | Method | Intent
