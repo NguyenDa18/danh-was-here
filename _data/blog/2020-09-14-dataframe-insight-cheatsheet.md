@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /dataframe-cheatsheet
-date: 2020-09-14T05:27:23.228Z
+date: 2020-09-26T05:27:23.228Z
 title: DataFrame Insight Cheatsheet
 metaDescription: 'python dataframe, dataframe cheatsheet, pandas dataframe'
 ---
@@ -12,7 +12,9 @@ I love working with DataFrames -very readable data tables that we are blessed wi
 | --- | --- |
 | `df.dtypes` | Examine data types |
 | `df.info()` | Get summary of DataFrame |
-| `df.describe()` | List stat properties for each column: count, mean, std, min, percentiles, maz |
+| `df.describe()` | List stat properties for each column: count, mean, std, min, percentiles, max |
+| `df.query('col1 > 0 & col1 < 5 | col2 > 0')` | Convenient alternative to slicing connectors: `df[df['col1'] > 0 ...rest]` : use [numexpr](https://numexpr.readthedocs.io/en/latest/user_guide.html) syntax instead of python syntax |
+| `df.assign(new_col = lambda x : func(col1))` | Creates a new column by evaluating function (using lambda here) on every row of df |
 | `df[['attr1', 'attr1']]` | Take subset of DataFrame |
 | `df.rename(<dict of cols to replace>)` | Rename column names of DataFrame |
 | `df.values.tolist()` | DataFrame to list of lists |
