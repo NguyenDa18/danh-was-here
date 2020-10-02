@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /git-command-cheatsheet
-date: 2020-09-10T01:36:55.459Z
+date: 2020-10-02T01:36:55.459Z
 title: Git Command Cheatsheet
 metaDescription: 'Cheatsheet of Git commands to use, source control'
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
@@ -26,9 +26,20 @@ tags: ["Quick Notes"]
 ### Remove git tracking from folder:
 - `rm -rf .git`
 
+### Remove all unstaged files
+- `git checkout -- .`
+
+### Back out of merge
+- `git merge --abort`
+
 ### Git Revert
 - `git revert <commit hash>`
 - Applies git commit that reverts that commit
+
+### Undo Git Commit That Was Not Pushed
+- `git reset --soft HEAD~` : undo commit and keep all files staged
+- `git reset HEAD~` or `git reset --mixed HEAD~` - undo the last commit and unstage all files
+- [Source](https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed)
 
 ### Git Cherry Pick
 - `git log` : grab Commit Hash
@@ -47,6 +58,7 @@ tags: ["Quick Notes"]
 
 #### HARD METHOD
 - `git reset --hard <commit hash>` : reverts tracked files to state they were in before but it leaves untracked files alone
+- `git reset --hard HEAD~` : undo the commit and revert all changes, completely turn back to original state
 
 ### Git Lost and Found Commits
 - `git fsck --lost-found`
