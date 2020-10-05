@@ -3,7 +3,10 @@ template: BlogPost
 path: /mongodb-mongoose-boilerplate
 date: 2020-09-28T01:32:44.408Z
 title: 'Working with MongoDB : Using Mongoose'
+metaDescription: 'MongoDB boilerplate, Mongoose ORM, Node.js Mongoose, Connect MongoDB Database'
 ---
+Boilerplate to connect to MongoDB in Node.js using Mongoose ORM. Below are common model schemas used in projects.
+
 ## Connect DB function
 ```js
 const config = require('config');
