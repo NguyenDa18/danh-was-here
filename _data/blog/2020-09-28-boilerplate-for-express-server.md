@@ -4,6 +4,7 @@ path: /nodejs-express-boilerplate
 date: 2020-09-28T01:28:30.595Z
 title: Boilerplate for Express Server
 ---
+How I set up MERN stack Node.js backends.
 
 ## Dependencies
 - express : JS web server framework
@@ -20,14 +21,21 @@ const express = require('express')
 const dotenv = require('dotenv')
 const helmet = require('helmet')
 const xss = require('xss-clean')
+
+// Import routes
+const route1 = require('./routes/route1')
+const route2 = require('./routes/route2')
+
 dotenv.config({ path: './config/config.env' })
 
 // Connect to db function
 connectDB()
 
-// Routes
-
 const app = express()
+
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
+}
 
 // Body parser
 app.use(express.json())
@@ -42,7 +50,8 @@ app.use(xss())
 app.use(cors())
 
 // Mount routers
-app.use('/api/v1/route', myroute)
+app.use('/api/v1/route1', myroute1)
+app.use('/api/v1/route2', myroute2)
 
 const PORT = process.env.PORT || 5000
 
