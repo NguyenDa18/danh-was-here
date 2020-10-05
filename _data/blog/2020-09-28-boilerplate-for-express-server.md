@@ -4,7 +4,7 @@ path: /nodejs-express-boilerplate
 date: 2020-09-28T01:28:30.595Z
 title: Boilerplate for Express Server
 ---
-How I set up MERN stack Node.js backends.
+How I set up MERN stack Node.js backends. Heavily inspired by projects made by Brad Traversy.
 
 ## Dependencies
 - express : JS web server framework
