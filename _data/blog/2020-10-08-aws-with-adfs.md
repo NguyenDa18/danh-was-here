@@ -4,6 +4,8 @@ path: /aws-with-adfs
 date: 2020-02-24T18:55:16.701Z
 title: AWS with ADFS
 metaDescription: 'Log in with AWS with ADFS, aws-adfs, python, aws'
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg'
+tags: ["Quick Notes", "AWS"]
 ---
 # Logging in to AWS with ADFS
 If your organization uses Active Directory Federation Services (ADFS), you can use this very useful tool to authenticate with the cli
