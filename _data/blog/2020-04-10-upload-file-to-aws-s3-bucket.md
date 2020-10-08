@@ -35,7 +35,7 @@ const encoding = await toBase64(file).catch(e => console.log(e))
 ```js
 const b64 = encoding.replace("data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,", "")
 const content = {
-content: b64
+  content: b64
 }
 ```
 

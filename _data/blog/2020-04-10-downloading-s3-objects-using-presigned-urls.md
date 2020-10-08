@@ -49,11 +49,11 @@ def create_presigned_url(bucket_name, object_name, expiration=3600)
     return response
 ```
 
-Now all I had to do was return the link as a response to when data is POSTed on the frontend and voila, an easy to use and maintain way to make downloads from private S3 possible :3
+Now all I had to do was return the link as a response to when data is POST-ed on the frontend and voila, an easy to use and maintain way to make downloads from private S3 possible!
 
 ## React Client Side Snippet
 
-```react
+```js
 const DownloadThing = () => {
 const [downloadLink, setDownloadLink] = useState('https://via.placeholder.com/150')
 const handleDownload = async (e) => {
