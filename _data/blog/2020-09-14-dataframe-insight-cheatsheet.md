@@ -4,6 +4,7 @@ path: /dataframe-cheatsheet
 date: 2020-09-26T05:27:23.228Z
 title: DataFrame Insight Cheatsheet
 metaDescription: 'python dataframe, dataframe cheatsheet, pandas dataframe'
+tags: ["Python", "Quick Notes"]
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1601196152/blog/shelf-df_chiphc.jpg
 ---
 # My DataFrame Cheatsheet

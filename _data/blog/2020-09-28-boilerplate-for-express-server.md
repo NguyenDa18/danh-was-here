@@ -3,8 +3,12 @@ template: BlogPost
 path: /nodejs-express-boilerplate
 date: 2020-09-28T01:28:30.595Z
 title: Boilerplate for Express Server
+metaDescription: 'script command not found, CLRF, LR, line endings for windows and linux'
+tags: ["Quick Notes", "JavaScript"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1602135540/blog/butler-159811_1280_k67rp3.png
 ---
-How I set up MERN stack Node.js backends. Heavily inspired by projects made by Brad Traversy.
+# How I set up MERN stack Node.js backends. Heavily inspired by projects made by Brad Traversy.
+* Core image from [Pixabay](https://pixabay.com/vectors/butler-dining-dinner-service-159811/)
 
 ## Dependencies
 - express : JS web server framework

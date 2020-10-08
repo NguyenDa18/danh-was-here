@@ -4,8 +4,13 @@ path: /mongodb-mongoose-boilerplate
 date: 2020-09-28T01:32:44.408Z
 title: 'Working with MongoDB : Using Mongoose'
 metaDescription: 'MongoDB boilerplate, Mongoose ORM, Node.js Mongoose, Connect MongoDB Database'
+tags: ["Quick Notes"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1602135328/blog/barrels-wine-1237340_1280_dg0geb.jpg
 ---
-Boilerplate to connect to MongoDB in Node.js using Mongoose ORM. Below are common model schemas used in projects.
+# Boilerplate to connect to MongoDB in Node.js using Mongoose ORM. 
+* Core image from [Pixabay](https://pixabay.com/photos/wine-barrel-wine-barrel-barrels-1237340/)
+
+Below are common model schemas used in projects.
 
 ## Connect DB function
 ```js
