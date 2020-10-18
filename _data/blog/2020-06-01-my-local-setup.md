@@ -11,19 +11,19 @@ thumbnail: >-
 ---
 # Local Setup for my Mac
 
-Homebrew, SDKMan, and Git have been my absolute favorite moving buddies whenever I needed to hop from different computers, whether it was for a start of an internship or career, or because I had knocked my personal Mac over from a jazzercize session (theoretically for me, my sister actually did that for hers).
+Homebrew, SDKMan, and Git have been my absolute favorite moving buddies whenever I needed to hop from different computers, whether it was for the start of an internship or career, or because I had knocked my personal Mac over from a jazzercize session (theoretically for me, my sister actually did that for hers).
 
 Homebrew is a gift for installing stuff on a Mac: [Brew Documentation](https://brew.sh/).
 
-SDKMan is a great tool I use to manage Java stuff because it gives me the greatest amount of control of switching versions in the most intuitive way: [SDKMan Documentation](https://sdkman.io/usage).
+SDKMan is a great tool I use to manage Java stuff because it gives me the greatest amount of control over switching versions in the most intuitive way: [SDKMan Documentation](https://sdkman.io/usage).
 
-Setting up for local dev can be a real PIA, but Homebrew makes it SOOO much easier! It is my go-to answer for whenever someone asks "Why Mac?" (other than aesthetics and us being a mostly Apple family). As I move to computer to computer, I will cherish my favorite moving buddies: Git (my go-to version control), Homebrew, and NPM. 
+Git is as every developer knows a very popular (the most popular) way to use version control for a project. It is what allows you to time travel with your code, to go back to the past to reference non-buggy code or to create a new timeline by branching off and making the needed changes.
 
-> Homebrew? More like Homeboy...
+Setting up for local dev can be a real PIA, but these tools make it SOOO much easier! Note that this is a heavily Mac based setup because of the use of Homebrew (we are mostly an Apple family). As I move from computer to computer, I will cherish these favorite moving buddies.
 
 - - -
 
-*First thing to do of course is to install Homebrew:*
+*First thing to do of course is to install Homebrew on the Mac:*
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
@@ -33,14 +33,15 @@ Setting up for local dev can be a real PIA, but Homebrew makes it SOOO much easi
 
 * `brew install python`
 
-  * *Adjust path to use Python 3 instead of Python 2*
+  **Adjust path to use Python 3 instead of Python 2*
 
-    * View where python is installed
+    * To view where python is installed
 
       * `ls -l /usr/local/bin/python*`
     * change default python symlink to the version you want to use
 
       * `ln -s -f /usr/local/bin/<python3 version> /usr/local/bin/python`
+
     * close terminal and check that you now are using Python3 as the default:
 
       * `python -V` : should return Python <python3 version>
@@ -76,21 +77,10 @@ Setting up for local dev can be a real PIA, but Homebrew makes it SOOO much easi
 * `brew cask install gradle`
 * `brew cask install intellij-idea-ce`
 
-#### Bonus: SDKMan to the rescue
-
-* SDKMan allows you to install Java stuff similarly but also painlessly switch between versions (comes in handy for using current or past JDKs)
-* [Easy install of Java and Gradle versions](https://sdkman.io/)
-
 ### For Clojure
 
-* *Be sure Java is installed first since Clojure has a dependencu on the JDK*
+* *Be sure Java is installed first since Clojure has a dependency on the JDK*
 * `brew install leiningen`
-
-### For Docker
-
-* `brew cask install docker`
-* Installs Docker Desktop app
-* Start Docker app and follow the same routine as if you installed the Mac .dmg from Docker: [Reference](https://stackoverflow.com/questions/44084846/cannot-connect-to-the-docker-daemon-on-macos)
 
 ### For NodeJS
 
@@ -102,3 +92,17 @@ Setting up for local dev can be a real PIA, but Homebrew makes it SOOO much easi
 * Similarly to SDKMan NVM allows you to switch between different Node versions
 * `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 * Use curl command from [NVM link](https://github.com/nvm-sh/nvm)
+
+### For Docker
+
+* `brew cask install docker`
+* Installs Docker Desktop app
+* Start Docker app and follow the same routine as if you installed the Mac .dmg from Docker: [Reference](https://stackoverflow.com/questions/44084846/cannot-connect-to-the-docker-daemon-on-macos)
+
+## My SDKMan Setup
+
+* SDKMan allows you to install Java stuff similarly but also painlessly switch between versions (comes in handy for using current or past JDKs)
+- `sdk install java 11.0.8.j9-adpt`
+- `sdk install maven 3.6.3`
+- `sdk install gradle 6.6.1`
+* [Easy install of Java and Gradle versions](https://sdkman.io/)
