@@ -5,6 +5,8 @@ date: 2020-10-05T03:22:32.237Z
 title: My Lein Profile Setup
 metaDescription: 'profiles.clj, lein profile'
 ---
+### How I have Leiningen configured to work with Clojure
+
 - prereq: Leiningen
 
 ## ~/.lein/profiles.clj
@@ -19,7 +21,7 @@ metaDescription: 'profiles.clj, lein profile'
 ```
 
 ### Dependencies
-- Lein Try : sample lein packages at command line
-- Lein Midje : clean Clojure testing framework
-- Lein Cloverage : CI/CD of testing for Clojure
-- Lein Eastwood : linting for Clojure
+- [Lein Try](https://github.com/avescodes/lein-try) : Sample lein libraries at the command line, without needing to download them
+- [Lein Midje](https://github.com/marick/Midje/wiki/A-tutorial-introduction) : clean Clojure testing framework
+- [Lein Cloverage](https://github.com/cloverage/cloverage) : CI/CD of testing for Clojure
+- [Lein Eastwood](https://github.com/jonase/eastwood) : linting for Clojure
