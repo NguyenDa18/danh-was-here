@@ -3,11 +3,11 @@ template: BlogPost
 path: /my-lein-profile
 date: 2020-10-05T03:22:32.237Z
 title: My Lein Profile Setup
-metaDescription: 'profiles.clj, lein profile'
+metaDescription: 'profiles.clj, lein profile, my setup'
 ---
 ### How I have Leiningen configured to work with Clojure
 
-- prereq: Leiningen
+- prereq: [Leiningen](https://leiningen.org/)
 
 ## ~/.lein/profiles.clj
 
