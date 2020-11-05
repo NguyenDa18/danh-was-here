@@ -13,7 +13,7 @@ Some background information: my team maintains and develops the insurance shoppi
 
 Yesterday, my team was tasked with pulling an all-nighter because of one pesky bug: a fillable PDF form document was displaying fine for all browsers except for Chrome. 
 
-Twisting the knife some more, the document was displaying in Chrome for some regions but not for others. That mostly ruled out that it was an issue in the codebase, because the code used to write to and process the PDF form was reused for all regions. Some states had PDF forms that were generated fine, so that meant the code was working as expected.
+Twisting the knife some more, the document was displaying in Chrome for some regions but not for others. This ruled out that it was an issue in the codebase, because the code used to fill and process the PDF form was reused for all regions. Some states had PDF forms that were generated and displayed successfully, so that meant the code was working as expected.
 
 To our dread, that could only mean one thing: something was intrinsically wrong with the PDF templates being sent.
 
