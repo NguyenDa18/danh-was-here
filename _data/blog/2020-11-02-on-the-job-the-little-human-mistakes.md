@@ -7,14 +7,12 @@ metaDescription: human mistakes
 ---
 # The first of a series of job reflection posts
 
-I've been working full-time for a year and a half now and would like to emphasize something that cannot be taught : the significance of human errors that developers can overlook, and why they are the hardest to resolve. Developers rightfully hold pride in making failing tests pass green, configuring the perfect structure for a project, and even laying out the architecture.
+I've been working full-time for a year and a half now and have to emphasize something that cannot be taught : the significance of human errors that developers can overlook, and why they are the hardest to resolve. Developers rightfully hold pride in making failing tests pass green, configuring the perfect structure for a project, and using version control to confidently time-travel through a project's snapshots to tell exactly the state of the project before.
 
-Some background information: my team maintains and develops the insurance shopping site that always has a momentous deploy for Open Enrollment. During the time, users from Oregon, Washington, Utah, and Idaho would be able to apply for insurance for next year.
+Some background information: my team maintains and develops the insurance shopping site that always has a momentous deploy for Open Enrollment, the period when Americans can sign up for health insurance or change their plan. During that time, users from Oregon, Washington, Utah, and Idaho would be able to use our website make changes for Open Enrollment.
 
 Yesterday, my team was tasked with pulling an all-nighter because of one pesky bug: a fillable PDF form document was displaying fine for all browsers except for Chrome. 
 
-Twisting the knife some more, the document was displaying in Chrome for some regions but not for others. This ruled out that it was an issue in the codebase, because the code used to fill and process the PDF form was reused for all regions. Some states had PDF forms that were generated and displayed successfully, so that meant the code was working as expected.
-
-To our dread, that could only mean one thing: something was intrinsically wrong with the PDF templates being sent.
+Twisting the knife some more, the document was displaying in Chrome for some regions but not for others. This ruled out that it was an issue in the codebase, because the code used to fill and process the PDF form was reused for all regions. To our dread, that could only mean one thing: something was intrinsically wrong with the PDF templates being used.
 
 This is the hard part: as much as
