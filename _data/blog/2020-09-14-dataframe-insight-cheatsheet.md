@@ -14,8 +14,8 @@ I love working with DataFrames -very readable data tables that we are blessed wi
 
 | Method | Intent
 | --- | --- |
-| `df.dtypes` | Examine data types |
 | `df.info()` | Get summary of DataFrame |
+| `df.dtypes` | Examine data types |
 | `df.describe()` | List stat properties for each column: count, mean, std, min, percentiles, max |
 | `df.query('col1 > 0 & col1 < 5 | col2 > 0')` | Convenient alternative to slicing connectors: `df[df['col1'] > 0 ...rest]` : use [numexpr](https://numexpr.readthedocs.io/en/latest/user_guide.html) syntax instead of python syntax |
 | `df.assign(new_col = lambda x : func(col1))` | Creates a new column by evaluating function (using lambda here) on every row of df |
