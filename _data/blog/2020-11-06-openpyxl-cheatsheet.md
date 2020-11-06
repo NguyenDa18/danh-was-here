@@ -10,7 +10,10 @@ metaDescription: 'openpyxl, python, excel, python excel'
 ## Create a fill
 ```python
 from openpyxl .styles import PatternFill
-headerFill = PatternFill(start_color='00FFC001',
+myfill = PatternFill(start_color='00FFC001',
                    end_color='00FFC001',
                    fill_type='solid')
+
+# fill in a cell
+ws['{}{}'.format(get_column_letter(col), str(idx))].fill = myFill
 ```
