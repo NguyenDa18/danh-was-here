@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /python-notes
+path: /python-quick-notes
 date: 2020-09-28T01:43:10.537Z
 title: Python Notes to Myself
 ---
