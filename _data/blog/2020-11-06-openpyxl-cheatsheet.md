@@ -35,3 +35,11 @@ myfill = PatternFill(start_color='00FFC001',
 # fill in a cell with it
 ws['{}{}'.format(get_column_letter(col), str(idx))].fill = myFill
 ```
+
+### Save workbook to AWS S3 Bucket
+```python
+    with NamedTemporaryFile() as tmp:
+        filename = '/tmp/{}'.format(excel_filename)
+        wb.save(filename)
+        s3_resource.Bucket(bucket_name).upload_file(Filename=filename, Key=excel_filename)
+```
