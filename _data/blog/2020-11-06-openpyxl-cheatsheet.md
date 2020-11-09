@@ -10,15 +10,20 @@ metaDescription: 'openpyxl, python, excel, python excel, python cheatsheet'
 I chose to use openpyxl as the main Python library to help me read and create Excel spreadsheets for an internal tool at my job, and it was a fantastic tool that allowed me to be productive while also attaining a great developer experience. As with most lessons learned on the job, it's best to write a cheatsheet down so that I can use it the next time I need to use the openpyxl library again, which looks like soon. 
 
 ### Writing spreadsheet headers
-```python
-    for idx, value in enumerate(ws_headers):
-        cell_pos = '{}1'.format(alphabet[idx])
-        current_cell = worksheet[cell_pos]
-        current_cell.value = value
 
-        # color column name and make labels bold
-        current_cell.fill = headerFill
-        current_cell.font = Font(bold=True)
+```python
+alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M']
+
+for idx, value in enumerate(ws_headers):
+    cell_pos = '{}1'.format(alphabet[idx])
+    current_cell = worksheet[cell_pos]
+    
+    # fill value
+    current_cell.value = value
+
+    # color column name and make labels bold
+    current_cell.fill = headerFill
+    current_cell.font = Font(bold=True)
 ```
 
 ### Writing to spreadsheet body
