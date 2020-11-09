@@ -15,4 +15,6 @@ Yesterday, my team was tasked with pulling an all-nighter because of one pesky b
 
 Twisting the knife some more, the document was displaying in Chrome for some regions but not for others. This ruled out that it was an issue in the codebase, because the code used to fill and process the PDF form was reused for all regions. To our dread, that could only mean one thing: something was intrinsically wrong with the PDF templates being used.
 
-This is the hard part: as much as
+Eventually we were able to solve the problem by removing a page missing metadata from the PDF templates for states that the display was breaking on, and that reminded me of the hardest part of working.
+
+This is the hard part: as a developer you are responsible for solving any technological issues that occur, or justifying why additional help or reassignment is needed.
