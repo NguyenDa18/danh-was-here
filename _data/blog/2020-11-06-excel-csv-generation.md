@@ -17,7 +17,7 @@ def generateExcelWorkbook(download_data):
      
      # Generate worksheet1
      ws1 = wb.active
-     ws.title = 'Title 1'
+     ws1.title = 'Title 1'
      str_json = dumps(download_data)
 ```
 
