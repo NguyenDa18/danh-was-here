@@ -101,7 +101,7 @@ thumbnail: >-
 
 ### Git Log In Reverse Order, First Commit Ascending
 - `git log --reverse`
-- `git checkout `git rev-list --max-parents=0 HEAD | tail -n 1`
+- `git checkout `git rev-list --max-parents=0 HEAD | tail -n 1``
 - [source](https://stackoverflow.com/questions/43197105/how-do-you-jump-to-the-first-commit-in-git)
 
 ---
