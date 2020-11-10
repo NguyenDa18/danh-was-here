@@ -4,8 +4,8 @@ path: /git-command-cheatsheet
 date: 2020-10-02T01:36:55.459Z
 title: Git Command Cheatsheet
 metaDescription: 'Cheatsheet of Git commands to use, source control'
-thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
-tags: ["Quick Notes"]
+thumbnail: >-
+  https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
 ---
 # My Cheatsheet
 
@@ -98,6 +98,11 @@ tags: ["Quick Notes"]
 
 ### Git Log What Files Changed in Last N Commits
 - `git log --name-status -<N>`
+
+### Git Log In Reverse Order, First Commit Ascending
+- `git log --reverse`
+- `git checkout `git rev-list --max-parents=0 HEAD | tail -n 1`
+- [source](https://stackoverflow.com/questions/43197105/how-do-you-jump-to-the-first-commit-in-git)
 
 ---
 ## Working with Remote
