@@ -9,9 +9,21 @@ metaDescription: 'openpyxl, python, excel, python excel, python cheatsheet'
 
 I chose to use openpyxl as the main Python library to help me read and create Excel spreadsheets for an internal tool at my job, and it was a fantastic tool that allowed me to be productive while also attaining a great developer experience. As with most lessons learned on the job, it's best to write a cheatsheet down so that I can use it the next time I need to use the openpyxl library again, which looks like soon. 
 
+### Python imports that will be used for the following examples:
+```
+from openpyxl import Workbook
+from openpyxl.utils import get_column_letter
+from openpyxl.styles import PatternFill, Font
+import boto3
+from botocore.exceptions import ClientError
+```
+
 ### Writing spreadsheet headers
 
 ```python
+workbook = Workbook()
+worksheet = workbook.active
+
 alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M']
 
 for idx, value in enumerate(ws_headers):
@@ -43,10 +55,10 @@ for idx, data in enumerate(worksheet_data, start=2):
         worksheet[get_column_letter(col) + str(idx)] = row_item[col - 1]
 ```
 
-### Create a colored fill for a cell
+### Creating a colored fill for a cell
 
 ```python
-from openpyxl .styles import PatternFill
+from openpyxl.styles import PatternFill
 myfill = PatternFill(start_color='00FFC001',
                    end_color='00FFC001',
                    fill_type='solid')
@@ -55,9 +67,15 @@ myfill = PatternFill(start_color='00FFC001',
 ws['{}{}'.format(get_column_letter(col), str(idx))].fill = myFill
 ```
 
-### Save workbook to AWS S3 Bucket
+### Saving a workbook to AWS S3 Bucket
 
 ```python
+from tempfile import NamedTemporaryFile
+import boto3
+from botocore.exceptions import ClientError
+...
+
+s3_resource = boto3.resource('s3')
 with NamedTemporaryFile() as tmp:
     filename = '/tmp/{}'.format(excel_filename)
     wb.save(filename)
