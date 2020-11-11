@@ -7,7 +7,7 @@ metaDescription: 'human mistakes, job advice, software engineer advice'
 ---
 # The first of a series of job reflection / advice posts
 
-### TLDR: A lesson learned from an all nighter with the team trying to squash one bug
+### TLDR: A lesson reminded from an all-nighter with the team trying to squash *one* bug
 
 I've been working full-time for a year and a half now and have to emphasize something that cannot be taught : the significance of human errors that developers cannot control with code and can overlook, and why they can be the hardest issues to resolve. Developers rightfully pride themselves in making failing tests pass green, configuring the perfect structure for a project, and using version control to confidently time-travel through a project's snapshots to tell exactly the state of the project before. An attachment to control can be cultivated within developers -control fosters predictability, predictability fosters oh-so-desired mental clarity (you get the gist). But of course, not every part of a project can be implemented and tested with code, and I was reminded of that during out team's Open Enrollment deploy this year. One bug caused our deployment to only be 98% successful. That simply wouldn't do.
 
