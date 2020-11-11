@@ -3,11 +3,11 @@ template: BlogPost
 path: /on-the-job-human-mistakes
 date: 2020-11-02T02:23:58.953Z
 title: 'On the Job : The Little Human Mistakes'
-metaDescription: human mistakes
+metaDescription: 'human mistakes, job advice, software engineer advice'
 ---
-# The first of a series of job reflection posts
+# The first of a series of job reflection / advice posts
 
-I've been working full-time for a year and a half now and have to emphasize something that cannot be taught : the significance of human errors that developers cannot control and can overlook, and why they are the hardest to resolve. Developers rightfully pride themselves in making failing tests pass green, configuring the perfect structure for a project, and using version control to confidently time-travel through a project's snapshots to tell exactly the state of the project before. An attachment to control can be common to develop within developers -control fosters predictability, predictability fosters oh-so-desired mental clarity (you get the gist).
+I've been working full-time for a year and a half now and have to emphasize something that cannot be taught : the significance of human errors that developers cannot control and can overlook, and why they are the hardest to resolve. Developers rightfully pride themselves in making failing tests pass green, configuring the perfect structure for a project, and using version control to confidently time-travel through a project's snapshots to tell exactly the state of the project before. An attachment to control can be common to develop within developers -control fosters predictability, predictability fosters oh-so-desired mental clarity (you get the gist). But of course not every part of a project can be implemented and tested with code
 
 Some background information first: my team maintains and develops the medical insurance shopping site that always has a momentous deploy during Open Enrollment, the period when Americans can sign up for health insurance or change their plan. During that time, users from Oregon, Washington, Utah, and Idaho would be able to use our website to make changes for Open Enrollment.
 
