@@ -3,6 +3,9 @@ template: BlogPost
 path: /python-quick-notes
 date: 2020-09-28T01:43:10.537Z
 title: Python Notes to Myself
+metaDescription: 'Python notes, Python cheatsheet'
+tags: ["Tech Help", "Python"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1587692311/blog/snake_fp6nd1.jpg
 ---
 ### Check Version of Python Package
 ```python

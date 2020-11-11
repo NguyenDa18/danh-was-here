@@ -4,6 +4,8 @@ path: /openpyxl-cheetsheet
 date: 2020-11-06T04:36:04.732Z
 title: openpyxl Cheatsheet
 metaDescription: 'openpyxl, python, excel, python excel, python cheatsheet'
+tags: ["Tech Help", "Python"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1587692311/blog/snake_fp6nd1.jpg
 ---
 ## openpyxl Need to Know
 
