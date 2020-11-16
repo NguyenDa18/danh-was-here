@@ -8,6 +8,7 @@ const PostLink = ({ post }) => (
       {!!post.frontmatter.thumbnail && (
         <img
           className="dark-image"
+          loading="lazy"
           src={post.frontmatter.thumbnail}
           alt={post.frontmatter.title + "- Featured Shot"} />
       )}

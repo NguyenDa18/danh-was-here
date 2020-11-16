@@ -16,7 +16,7 @@ export default () => (
     `}
     render={data => (
       <div className="hero-header">
-        <img src="https://res.cloudinary.com/dnguyen/image/upload/v1580098970/blog/personal/bg_uyytdy.jpg" style={{ boxShadow: '0 0 30px black' }} alt="Danh logo" />
+        <img loading="lazy" src="https://res.cloudinary.com/dnguyen/image/upload/v1580098970/blog/personal/bg_uyytdy.jpg" style={{ boxShadow: '0 0 30px black' }} alt="Danh logo" />
         <div className="headline">{data.site.siteMetadata.home.title}</div>
         <div
           className="primary-content"
