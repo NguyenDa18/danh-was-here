@@ -29,6 +29,7 @@ def send_email(_deployed_env_):
 
 
 ### Add Subscriber to Topic
+```python
 def add_subscriber(email):
     resp_email = sns.subscribe(
         TopicArn=<arn of alert>,
@@ -36,6 +37,7 @@ def add_subscriber(email):
         Endpoint=email
     )
     return resp_email['SubscriptionArn']
+```
 
 ### Unsubscribe From Topic
 ```python
