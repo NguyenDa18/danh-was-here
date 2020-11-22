@@ -6,6 +6,8 @@ title: Send Notifications with AWS SNS
 metaDescription: >-
   Amazon SNS, AWS SNS, Amazon Simple Notification Service, Send Notifications
   with Python, Subscribe to Topic AWS SNS, Boto3 Python SNS
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg'
+tags: ["Quick Notes", "AWS"]
 ---
 ## Using AWS SNS (Simple Notification Service)
 The automation tool I created at work was a success and now I'm tasked with implementing new features to it for next year.
