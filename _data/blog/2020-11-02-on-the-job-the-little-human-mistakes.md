@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /on-the-job-human-mistakes
-date: 2020-11-02T02:23:58.953Z
+date: 2020-11-01T02:23:58.953Z
 title: 'On the Job : The Little Human Mistakes'
 metaDescription: 'human mistakes, job advice, software engineer advice'
 tags: ['On the Job', 'Personal']
@@ -23,3 +23,5 @@ Yesterday, my team was tested with pulling an all-nighter because of one pesky b
 Eventually we were able to solve the problem by removing a page missing metadata from the PDF templates for states that the display was breaking on, and that reminded me of one of the hardest parts of working in industry.
 
 The hardest part: as a developer you are responsible for solving any technological issues that occur, or justifying why additional help or reassignment is needed. Few things are more mentally draining than an error that has no way of tracing in error logs, and especially when it seems like a solution cannot be easily found after some Googling.
+
+But you do it. You solve the problem and luckily (and hopefully) you will have a team that will endure the mental marathon with you.
