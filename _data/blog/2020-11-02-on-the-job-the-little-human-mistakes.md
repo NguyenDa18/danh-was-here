@@ -4,8 +4,11 @@ path: /on-the-job-human-mistakes
 date: 2020-11-02T02:23:58.953Z
 title: 'On the Job : The Little Human Mistakes'
 metaDescription: 'human mistakes, job advice, software engineer advice'
+tags: ['On the Job', 'Personal']
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1606011157/blog/work-skyscrapers_dmmydt.jpg'
 ---
 # The first of a series of job reflection / advice posts
+- Core image from [Lorem Picsum](https://i.picsum.photos/id/1048/5616/3744.jpg?hmac=N5TZKe4gtmf4hU8xRs-zbS4diYiO009Jni7n50609zk)
 
 ### TLDR: A lesson reminded from an all-nighter with the team trying to squash *one* bug
 
