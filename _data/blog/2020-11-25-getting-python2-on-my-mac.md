@@ -3,9 +3,11 @@ template: BlogPost
 path: /get-python2
 date: 2020-11-25T19:24:41.219Z
 title: Getting Python2 on my Mac
-metaDescription: 'Python2 Mac install, python2 install'
+metaDescription: 'Python2 Mac install, python2 install, python2 pyenv, Use Python2 instead of Python3, Python downgrade, Python pyenv version'
+tags: ["Tech Help", "Python"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1587692311/blog/snake_fp6nd1.jpg
 ---
-## The Python community is trying to Thanos snap Python2...
+### The Python community is trying to Thanos snap Python2...
 
 ![Begone](https://media.giphy.com/media/LOoaJ2lbqmduxOaZpS/giphy-downsized.gif)
 
@@ -39,5 +41,6 @@ pyenv global 2.7.18
 eval "$(pyenv init -)"
 ```
 ---
+
 - [Source](https://stackoverflow.com/questions/18671253/how-can-i-use-homebrew-to-install-both-python-2-and-3-on-mac)
 - [PyEnv Documentation](https://github.com/pyenv/pyenv)
