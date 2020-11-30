@@ -4,7 +4,7 @@ path: /download-aws-s3-files
 date: 2020-04-10T01:02:40.429Z
 title: Downloading S3 Objects Using Presigned URLs
 metaDescription: 'aws,s3,download,presigned url, how to download S3 object, AWS S3 download'
-thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg'
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1582578373/blog/cloud_lorempixel_1056_p3osjj.jpg'
 tags: ['AWS', 'Quick Notes']
 ---
 # Downloading S3 Objects Using Presigned URLs

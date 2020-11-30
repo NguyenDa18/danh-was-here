@@ -4,7 +4,7 @@ path: /upload-file-to-aws-s3-bucket
 date: 2020-04-10T01:02:40.429Z
 title: Uploading File to AWS S3 Bucket
 metaDescription: 'aws,s3,upload,base64,api-gateway,aws upload'
-thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg'
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1582578373/blog/cloud_lorempixel_1056_p3osjj.jpg'
 tags: ['AWS', 'Quick Notes']
 ---
 # Uploading a File To S3
