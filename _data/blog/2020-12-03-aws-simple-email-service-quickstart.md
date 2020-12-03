@@ -6,8 +6,11 @@ title: AWS Simple Email Service QuickStart
 ---
 # Quickstart
 
-## Init
+## Init / Importing
 ```python
+import boto3
+from botocore.exceptions import ClientError
+
 client = boto3.client('ses')
 ```
 
