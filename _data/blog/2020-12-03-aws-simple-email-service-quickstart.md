@@ -25,6 +25,7 @@ def verify_email(email: str):
 ## Send Email
 ```python
 def send_update(email: str):
+    CHARSET = "UTF-8"
     data = email_body()
     try:
         response = client.send_email(
