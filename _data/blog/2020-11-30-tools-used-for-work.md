@@ -38,8 +38,7 @@ For those curious of what I and the rest of the technical team at my workplace u
 ### Google Chrome
 * Main web browser used for development.
 
-### Mural
-* App used like a whiteboard during team meetings, in which participants use sticky notes and attach them to the main board.
+---
 
 ## Software Stacks I Contributed To For Work
 
@@ -54,11 +53,16 @@ For those curious of what I and the rest of the technical team at my workplace u
 ### React, Flask (with AWS Boto3)
 * Stack for internal administration tool (I have a couple blog posts about it)
 
-## Tools Used as an Employee (Admin Tools)
+---
+
+## Tools I Use as an Employee (Admin Tools)
 
 ### Microsoft Outlook
 * Email service all employees use
 
 ### Microsoft Teams
 * Replacement for Skype, main spot where virtual company-wide meetings and announcements take place. Also where teams schedule and hold scrum meetings.
+
+### Mural
+* App used like a whiteboard during team meetings, in which participants use sticky notes and attach them to the main board.
 
