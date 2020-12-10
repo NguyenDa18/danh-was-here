@@ -14,36 +14,51 @@ For those curious of what I and the rest of the technical team at my workplace u
 
 ## Tools Used as a Developer
 
-1. Git + GitLab
+### Git + GitLab
 * Git is version control used, typical workflow used is feature branches are created from the current release branch of the month, and submitted MRs (merge requests) are reviewed and approved in GitLab. Each project has a CI/CD pipeline configured so GitLab automates building the containers for the apps/services and deploying them usually to an AWS environment.
 
-2. Visual Studio Code
+### Visual Studio Code
 * Main code editor my teammates and I use. Great for working in both backend and frontend because of the large array of extensions and customizability.
 
-3. Atlassian
+### Atlassian
 * Where the majority of technical documentation is stored. Teams have their own spaces and I contributed a lot of documentation to my team's space.
 
-4. Slack
+### Slack
 * The technical peeps LOVE Slack, including me. Very solid chatting app and with lots of great integrations.
+
+### Postman
+* My main REST+GraphQL client used to test endpoints, love the ability to organize and share collections of requests.
+
+### AWS (Amazon Web Services)
+* Main parts used are ECS (Elastic Container Service), S3 (Simple Storage Service), DynamoDB.
+
+### Docker
+* Containerization of software.
+
+### Google Chrome
+* Main web browser used for development.
+
+### Mural
+* App used like a whiteboard during team meetings, in which participants use sticky notes and attach them to the main board.
 
 ## Software Stacks I Contributed To For Work
 
-1. React+Redux, Java
+### React+Redux, Java
 * Stack for insurance e-commerce site my team manages and maintains (and continuously improve)
 
-2. ClojureScript, Clojure, JavaScript, GraphQL
+### ClojureScript, Clojure, JavaScript, GraphQL
 * Stack for main portal Site
 * Clojure backend that contains REST calls and also GraphQL queries. Highly based on Clojure juxt.
 * ClojureScript frontend code with Reagent and ReFrame used (ClojureScript's reversions of React and Redux in JavaScript)
 
-3. React, Flask (with AWS Boto3)
+### React, Flask (with AWS Boto3)
 * Stack for internal administration tool (I have a couple blog posts about it)
 
 ## Tools Used as an Employee (Admin Tools)
 
-1. Microsoft Outlook
+### Microsoft Outlook
 * Email service all employees use
 
-2. Microsoft Teams
+### Microsoft Teams
 * Replacement for Skype, main spot where virtual company-wide meetings and announcements take place. Also where teams schedule and hold scrum meetings.
 
