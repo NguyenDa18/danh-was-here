@@ -5,7 +5,7 @@ date: 2020-12-03T18:47:45.802Z
 title: Send Email with AWS SES
 metaDescription: 'Send email with AWS SES, Simple Email Service'
 ---
-# Quickstart
+# Using AWS SES (Simple Email Service)
 
 ## Init / Imports needed
 ```python
