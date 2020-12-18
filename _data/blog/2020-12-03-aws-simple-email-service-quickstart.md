@@ -1,24 +1,43 @@
 ---
 template: BlogPost
-path: /aws-ses-quick
+path: /send-email-with-aws-ses
 date: 2020-12-03T18:47:45.802Z
-title: AWS Simple Email Service QuickStart
+title: Send Email with AWS SES
+metaDescription: 'Send email with AWS SES, Simple Email Service'
 ---
 # Quickstart
 
-## Init / Importing
+## Init / Imports needed
 ```python
 import boto3
 from botocore.exceptions import ClientError
 
-client = boto3.client('ses')
+ses = boto3.client('ses')
 ```
 
 ## Verify Email
 ```python
 def verify_email(email: str):
-    response = client.verify_email_identity(EmailAddress=email)
+    response = ses.verify_email_identity(EmailAddress=email)
     print(response.text)
+    return response
+```
+
+## List Verified Emails
+```python
+def list_subscribers():
+    response = ses.list_identities(
+        IdentityType="EmailAddress"
+    )
+    return response
+```
+
+## Delete Verified Email
+```python
+def delete_subscriber(email):
+    response = ses.delete_identity(
+        Identity=email
+    )
     return response
 ```
 
@@ -28,7 +47,7 @@ def send_update(email: str):
     CHARSET = "UTF-8"
     data = email_body()
     try:
-        response = client.send_email(
+        response = ses.send_email(
             Destination={
                 'ToAddresses': [email]
             },
