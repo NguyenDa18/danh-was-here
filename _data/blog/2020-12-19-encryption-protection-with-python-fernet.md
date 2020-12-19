@@ -11,6 +11,17 @@ title: Encryption Protection with Python Fernet
 from cryptography.fernet import Fernet
 ```
 
+## Generate secret key to be used
+```python
+def generate_key():
+    """
+    Generate key and save to file for DynamoDB email table
+    """
+    key = Fernet.generate_key()
+    with open("secret.key", "wb")  as key_file:
+        key_file.write(key)
+```
+
 ## Meat of necessary code, includes encryption and decryption
 ```python
 def load_key():
