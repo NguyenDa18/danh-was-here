@@ -4,18 +4,18 @@ path: /dataframe-cheatsheet
 date: 2020-09-26T05:27:23.228Z
 title: DataFrame Insight Cheatsheet
 metaDescription: 'python dataframe, dataframe cheatsheet, pandas dataframe'
-tags: ["Python", "Quick Notes"]
-thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1601196152/blog/shelf-df_chiphc.jpg
+thumbnail: >-
+  https://res.cloudinary.com/dnguyen/image/upload/v1601196152/blog/shelf-df_chiphc.jpg
 ---
 # My DataFrame Cheatsheet
 * Core image from [Phantasio Games](http://www.phantasiogames.net/2019/11/shelves-are-small.html)
 
-I love working with DataFrames -very readable data tables that we are blessed with Pandas to help us break down complex and annoying data from a variety of formats. That said, filtering and summing down is a vital step for any data analysis (and so you will actually have time to watch Netflix) so here is some quick things to consider:
+I love working with DataFrames -very readable data tables that we are blessed with the python `pandas` library to help us break down complex and annoying data from a variety of formats. That said, working with them properly is a vital step for any data analysis (and so you will actually have time to watch Netflix) so here are some quick operations and recipes to consider:
 
 | Method | Intent
 | --- | --- |
-| `df.dtypes` | Examine data types |
 | `df.info()` | Get summary of DataFrame |
+| `df.dtypes` | Examine data types |
 | `df.describe()` | List stat properties for each column: count, mean, std, min, percentiles, max |
 | `df.query('col1 > 0 & col1 < 5 | col2 > 0')` | Convenient alternative to slicing connectors: `df[df['col1'] > 0 ...rest]` : use [numexpr](https://numexpr.readthedocs.io/en/latest/user_guide.html) syntax instead of python syntax |
 | `df.assign(new_col = lambda x : func(col1))` | Creates a new column by evaluating function (using lambda here) on every row of df |
