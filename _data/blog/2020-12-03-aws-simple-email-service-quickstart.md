@@ -4,6 +4,8 @@ path: /send-email-with-aws-ses
 date: 2020-12-03T18:47:45.802Z
 title: Send Email with AWS SES
 metaDescription: 'Send email with AWS SES, Simple Email Service'
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1582578373/blog/cloud_lorempixel_1056_p3osjj.jpg'
+tags: ["Quick Notes", "AWS"]
 ---
 # Using AWS SES (Simple Email Service)
 

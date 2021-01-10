@@ -7,6 +7,8 @@ metaDescription: >-
   Tools and technologies used at work, Cambia Health Solutions tech stacks,
   Cambia Health Solutions tools, software developer tools, software engineer
   tools, version control
+tags: ['On the Job', 'Personal']
+thumbnail: 'https://res.cloudinary.com/dnguyen/image/upload/v1606011157/blog/work-skyscrapers_dmmydt.jpg'
 ---
 ## My Toolbelt at Work
 
