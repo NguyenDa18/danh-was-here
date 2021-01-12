@@ -6,6 +6,8 @@ title: Using SharePoint with Python
 metaDescription: Using SharePoint API with Python, SharePoint API list query,
   SharePoint API get file by value query, Make SharePoint request with Python
   with requests library, SharePoint API get Excel values
+tags: ["Tutorials", "Python", "Quick Notes"]
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg
 ---
 
 ## Share the pain with me in using SharePoint and Python
