@@ -3,8 +3,12 @@ template: BlogPost
 path: /encrypt-python-fernet
 date: 2020-12-19T00:24:20.065Z
 title: Encryption Protection with Python Fernet
+metaDescription: Python encryption and decryption with Fernet library.
 ---
 # Protecting data using Python
+
+## Background
+I needed to store email addresses and preferences in a database. To avoid a Facebook situation in which plaintext data could lead to a lot of panic, the least you can do is encrypt the data when storing it, and using the simple way of decoding it. All of this can be done with Python's `Fernet` library.
 
 ## Necessary import
 ```python
