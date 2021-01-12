@@ -17,9 +17,9 @@ _Not so painful!_
 ### Background
 
 A new requirement came up for the internal service I built at work: grabbing the Excel file directly from SharePoint and loading into an AWS S3 bucket -just one more step of automation for the service, because currently I upload the Excel file manually into the POC environment bucket and use Postman jobs to copy that file to the AWS testing environments.
-After much debate with IT about the use of Graph API, we were able to compromise and choose using just the SharePoint API to do this.
+After much debate with IT about the use of Graph API, we were able to compromise and choose using just the SharePoint API to do this. The reason why there was debate over the Microsoft Graph API, which is the designated API to work with Microsoft products including SharePoint, Outlook, and OneDrive, is that security wanted to narrow down permissions to just the needed resources. Using the Graph API would have given too much control over many Microsoft resources teams wouldn't use.
 
-As usual, the API documentation [could have been better](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=http). More specifically, the documentation on [working with SharePoint files](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/working-with-folders-and-files-with-rest). The examples used C# as the client for the SharePoint REST calls, and I was looking for examples with Python. After writing some pet scripts using the python requests library, I was able to perform the operations needed for this requirement.
+As usual, the API documentation [could have been better](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=http). More specifically, the documentation on [working with SharePoint files](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/working-with-folders-and-files-with-rest). The examples used C# as the client for the SharePoint REST calls, and I was not looking forward to making a separate service, and looked into making it work with Python. After writing some pet scripts using the python `requests` library, I was able to perform the operations needed for this requirement.
 
 ### Prerequisite : SharePoint API Access Token
 
@@ -68,7 +68,7 @@ Which is where our friend Python comes in...
 
 Below is a simple script in which I use the Python `requests` library to query SharePoint using the "Retrieve a file that is attached to that list item" query, providing the access token in the headers. The key is that we want the response to be in _bytes_.
 
-For half an hour I was getting into ugly parsing territory because I was using `response.text`, not `response.content`. The former would return a string of the returned Excek byte data that would lead to parsing issues because of alien characters. The latter would return a byte array, which you could inspect with: `print(type(response.content))`. I called `strip()` to clean up the bytes some more. Then I used the `openpyxl` library which I was familiar with before to load in the bytes and read the Excel Worksheet -basically the behavior I wanted with a Microsoft Graph API call. It's as simple as that!
+For half an hour I was getting into ugly parsing territory because I was using `response.text`, not `response.content`. The former would return a string of the returned Excel byte data that would lead to parsing issues because of alien characters. The latter would return a byte array, which you could inspect with: `print(type(response.content))`. I called `strip()` to clean up the bytes some more. Then I used the `openpyxl` library which I was familiar with before to load in the bytes and read the Excel Worksheet -basically the behavior I wanted with a Microsoft Graph API call. It's as simple as that!
 
 ```python
 # sharepoint_read_excel_demo.py
