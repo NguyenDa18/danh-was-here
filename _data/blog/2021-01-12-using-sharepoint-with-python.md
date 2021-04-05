@@ -1,12 +1,15 @@
 ---
 template: BlogPost
 path: /sharepoint-with-python
-date: 2021-01-11T22:56:14.976Z
+date: 2021-04-05T17:02:50.273Z
 title: Using SharePoint with Python
 metaDescription: Using SharePoint API with Python, SharePoint API list query,
   SharePoint API get file by value query, Make SharePoint request with Python
   with requests library, SharePoint API get Excel values
-tags: ["Tutorials", "Python", "Quick Notes"]
+tags:
+  - Tutorials
+  - Python
+  - Quick Notes
 thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1583116494/blog/folders_squarespace-cdn_h2bu35.jpg
 ---
 
@@ -34,6 +37,44 @@ curl --location --request POST 'https://accounts.accesscontrol.windows.net/{Shar
 --data-urlencode 'client_id=<client id>' \
 --data-urlencode 'client_secret=<client secret>' \
 --data-urlencode 'resource=<resource id>'
+```
+
+So I created a utility function in Python to make the request for the SharePoint token, based on the CURL request:
+
+```python
+creds = {
+    'type': 'client_credentials',
+    'id': '<client id>',
+    'secret': '<client secret>',
+    'resource': '<resource id>'
+}
+
+def get_sharepoint_token():
+    token_url = "https://accounts.accesscontrol.windows.net/{SharePoint ID}/tokens/OAuth/2"
+    headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+    payload = {
+        'grant_type': creds['type'],
+        'client_id': creds['id'],
+        'client_secret': creds['secret'],
+        'resource': creds['resource']
+    }
+
+    access_token = ""
+
+    try:
+        response = requests.post(token_url, data=payload, headers=headers, timeout=1)
+
+        # if response was successful no Exception will be raised
+        response.raise_for_status()
+        success = response.status_code == 200
+        access_token = response.json()["access_token"] if success else ""
+    except HTTPError as http_error:
+        print('HTTP error occurred: {}'.format(http_error))
+    except Exception as err:
+        print('Other error occurred: {}'.format(err))
+    return access_token
 ```
 
 Once you have this access token you will need to provide it as a Bearer token in the Authorization headers of each request.
@@ -77,7 +118,10 @@ import io
 from openpyxl import load_workbook
 
 url = "https://{BASE_URL}/_api/web/GetFolderByServerRelativeUrl('apples')/Files('prices.xlsx')/$value"
-sharepoint_token = "<sharepoint token>"
+# sharepoint_token = "<sharepoint token>"
+
+# using our util function
+sharepoint_token = get_sharepoint_token()
 
 headers = {
     'Authorization': 'Bearer {}'.format(sharepoint_token)
@@ -88,7 +132,7 @@ modded = response.content.strip()
 
 wb = load_workbook(filename=(io.BytesIO(modded)), data_only=True)
 print(wb.sheetnames)
-ws = wb['Worksheet 1']
+ws = wb['<name of a worksheet in the Excel workbook>']
 
 for row in ws.values:
    for value in row:
