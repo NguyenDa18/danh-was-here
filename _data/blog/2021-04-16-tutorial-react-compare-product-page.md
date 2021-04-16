@@ -2,7 +2,7 @@
 template: BlogPost
 path: /react-compare-app
 date: 2021-04-16T03:04:33.203Z
-title: "Tutorial: React Compare Product Page"
+title: "Tutorial: React Product Compare Page"
 metaDescription: react,react compare, react compare product page, react
   tutorial, react compare product, react 2021 tutorial
 ---
