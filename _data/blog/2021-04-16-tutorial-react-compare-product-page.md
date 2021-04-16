@@ -38,7 +38,7 @@ That is all you need. TBC
 Here is the finished product:
 
 <iframe
-     src="https://codesandbox.io/s/product-compare-demo-its11?fontsize=14&hidenavigation=1&theme=dark"
+     src="https://codesandbox.io/embed/product-compare-demo-its11?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
      title="redux-tk-clock"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
