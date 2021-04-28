@@ -18,8 +18,10 @@ Let's get started.
 
 ## Part 2: Create your comparison component:
 
+
 ```react
-const [selectedItems, setSelectedItems] = useState([])
+const ProductComparison = ({ products }) => {
+    const [selectedItems, setSelectedItems] = useState([])
 
     const addToCompare = (item) => {
       setSelectedItems((selectedItems) => [...selectedItems, item])
@@ -29,6 +31,13 @@ const [selectedItems, setSelectedItems] = useState([])
       const filteredItems = selectedItems.filter(product => product.id !== item.id)
       setSelectedItems(filteredItems)
     }
+
+    return (
+        ...your component
+    )
+}
+
+
 
 ```
 
