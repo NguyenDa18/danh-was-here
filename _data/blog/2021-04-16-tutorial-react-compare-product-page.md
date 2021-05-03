@@ -18,8 +18,11 @@ Let's get started.
 
 ## Part 2: Create your comparison component:
 
+
 ```react
-const [selectedItems, setSelectedItems] = useState([])
+import React, { useState } from 'react'
+const ProductComparison = ({ products }) => {
+    const [selectedItems, setSelectedItems] = useState([])
 
     const addToCompare = (item) => {
       setSelectedItems((selectedItems) => [...selectedItems, item])
@@ -30,9 +33,14 @@ const [selectedItems, setSelectedItems] = useState([])
       setSelectedItems(filteredItems)
     }
 
+    return (
+        ...your component
+    )
+}
+
 ```
 
-That is all you need. TBC
+This the heart of the component. SelectedItems State is initialized, the state that contains the data of items selected to compare. The `addToCompare` function is a simple function to add to the state. The `removeFromCompare` function filters the selected item out of the SelectedItems state and sets the state again.
 
 
 Here is the finished product:
