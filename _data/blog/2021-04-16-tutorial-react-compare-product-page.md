@@ -20,6 +20,7 @@ Let's get started.
 
 
 ```react
+import React, { useState } from 'react'
 const ProductComparison = ({ products }) => {
     const [selectedItems, setSelectedItems] = useState([])
 
@@ -37,11 +38,9 @@ const ProductComparison = ({ products }) => {
     )
 }
 
-
-
 ```
 
-That is all you need. TBC
+This the heart of the component. SelectedItems State is initialized, the state that contains the data of items selected to compare. The `addToCompare` function is a simple function to add to the state. The `removeFromCompare` function 
 
 
 Here is the finished product:
