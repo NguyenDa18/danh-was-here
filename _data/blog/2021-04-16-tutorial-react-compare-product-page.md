@@ -40,7 +40,7 @@ const ProductComparison = ({ products }) => {
 
 ```
 
-This the heart of the component. SelectedItems State is initialized, the state that contains the data of items selected to compare. The `addToCompare` function is a simple function to add to the state. The `removeFromCompare` function 
+This the heart of the component. SelectedItems State is initialized, the state that contains the data of items selected to compare. The `addToCompare` function is a simple function to add to the state. The `removeFromCompare` function filters the selected item out of the SelectedItems state and sets the state again.
 
 
 Here is the finished product:
