@@ -12,7 +12,7 @@ I used Flask AP Scheduler.
 Documentation for the module is [here](https://github.com/viniciuschiele/flask-apscheduler).
 
 ## Install python package 
-- `pip install flask_APScheduler`
+- `pip install Flask-APScheduler`
 
 ## Import and configure the APScheduler in the main file (where Flask app is initialized)
 
