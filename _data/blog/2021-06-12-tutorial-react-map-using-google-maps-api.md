@@ -7,7 +7,7 @@ metaDescription: react google map, google map api, react map, react, react
   google map tutorial, react tutorial, react simple project, react google maps
   api, @react-google-maps/api
 ---
-# Simple recipe #2 : React Map using @react-google-maps/api package
+# Simple Recipe #2 : React Map using @react-google-maps/api package
 
 Our team released a substantial refactor of the ecommerce shopping app we maintain, making every component cleaner by switching to React functional components with React Hooks, using Redux Toolkit for less boilerplate, *TypeScript* porting which helps with typing protection and self-documenting code, and overall a cleaner developer experience and more efficient app; both in development times and better response times and accessibility scores in production.
 
