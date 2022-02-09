@@ -3,9 +3,8 @@ template: BlogPost
 path: /git-command-cheatsheet
 date: 2020-10-02T01:36:55.459Z
 title: Git Command Cheatsheet
-metaDescription: 'Cheatsheet of Git commands to use, source control'
-thumbnail: >-
-  https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
+metaDescription: Cheatsheet of Git commands to use, source control
+thumbnail: https://res.cloudinary.com/dnguyen/image/upload/v1581529285/blog/git_img_p51ghm.jpg
 ---
 # My Cheatsheet
 
@@ -146,6 +145,11 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.gi
 git fetch upstream
 git checkout master
 git merge upstream/master
+```
+
+### Set Upstream to Branch
+```
+git branch --set-upstream-to=origin/<branch> <feature branch>
 ```
 
 ### Git Remote View Origin
